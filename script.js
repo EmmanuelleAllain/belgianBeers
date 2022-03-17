@@ -1,10 +1,18 @@
+const menuButton = document.querySelector(".menuButton");
+const menuList = document.querySelector("ul");
+
+menuButton.addEventListener("click", () => {
+  menuList.classList.toggle("menuBurger");
+});
+
 const belgianBeersTop10 = [
   {
     name: "Maredsous",
     bitterness: "2 / 5",
     proof: "10°",
     type: "Triple d'Abbaye",
-    beerspicture: "",
+    beerspicture:
+      "/home/utilisateur/wcs-2022/belgianBeers/beers_pictures/Corne_du_bois_des_pendus.png",
     beersdescription: "Saveurs de caramel, d'épices, de fruits et de bois.",
   },
   {
