@@ -1,66 +1,58 @@
 * {
   padding: 0;
   margin: 0;
-  --main-first-color : #7fc3c0;
-  --main-second-color : #cfb845;
-  --main-third-color : #141414;
+  list-style: none;
+  --main-first-color: #7fc3c0;
+  --main-second-color: #cfb845;
+  --main-third-color: #141414;
 }
 
-footer{
-  position:absolute;
-  bottom: 0;
-  border: var(--main-first-color) 10px ridge;
-  border-top: none;
-  border-left: none;
-  background-color: white;
+.menuButton {
+  border: none;
+  border-radius: 15px;
+  width: 110px;
+  height: 70px;
 }
 
-header{
-  border: var(--main-first-color) 10px ridge;
-  border-bottom: none;
-  border-right: none;
-  height: 5rem;
-  background-color: white;
+.menuButton > img {
+  width: 80%;
+  height: 100%;
 }
 
-header nav {
-  display : flex;
+button span {
+  display: none;
+}
+
+header div {
+  display: flex;
   justify-content: space-between;
+}
+
+#production {
+  width: 100%;
 }
 
 nav {
   display: flex;
-  align-items: center;
-  
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
 }
 
-body{
-  background-color: rgb(207,184,69, 0.5);
+ul {
+  visibility: hidden;
 }
 
-h1 {
-  justify-content: center;
-  font-size: 1.2rem;
-  margin-left: 1rem;
+.menuBurger {
+  visibility: visible;
 }
-
-li{
-  list-style: none;
-  display: none;
-}
-
-ul{
-}
-
-.menu-button{
-  justify-content: center;
-  margin-right: 1rem;
-}
-
-h2.typeOfBeers {
-margin-top: 2rem;
-}
-
-h3.fermentationHaute, h3.fermentationBasse, h3.fermentationSpontanee{
-  margin-top: 2rem;
+footer {
+  position: absolute;
+  width: 90%;
+  bottom: 0px;
+  padding: 10px;
+  height: 50px;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
 }
