@@ -43,9 +43,16 @@ form {
     text-align: center;
   }
 
-  /*cette id met en forme le paragraphe de confirmation dès qu'on clique sur le bouton submit*/
+  /*cette id met en forme le container du paragraphe de confirmation dès qu'on clique sur le bouton submit*/
   #confirmation-container {
       margin: 20px;
+      background-color: var(--main-first-color);
+  }
+
+  /* cette class met en forme le paragraphe en lui-même*/
+  .conf-text {
+    text-align: center;
+
   }
 
   /*.beer-icon {
