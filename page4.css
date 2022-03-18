@@ -45,5 +45,20 @@ form {
   /*cette id met en forme le paragraphe de confirmation dès qu'on clique sur le bouton submit*/
   #confirmation-container {
       margin: 20px;
+  }
 
+  /*.beer-icon {
+    display: none;
+  }*/
+
+  .beer-icon-mousemove {
+    display: flex;
+    background-image: url(./Icons/beer.png);
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    position: absolute;
+    /*transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+    z-index: -1;*/
   }
