@@ -140,7 +140,7 @@ function createCard(title, bitterness, proof, type, description, picture) {
 
     const cardDescription = document.createElement("div");
     cardDescription.classList.add("card-description");
-    cardDescription.innerHTML = `Description : ${description}`;
+    cardDescription.innerHTML = `${description}`;
     cardBody.appendChild(cardDescription);
   
     // Step3: Create the cardButton button, add the class card-button,
