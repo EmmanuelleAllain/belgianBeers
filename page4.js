@@ -18,20 +18,31 @@ form.addEventListener ("submit", function(event) {
 
 // ELEMENTS POUR LA BIERE QUI SUIT LA SOURIS
 
+<<<<<<< HEAD
 let beerIcon = document.querySelector(".beerIcon");
 
+=======
+const beerIcon = document.querySelector("beer-icon");
+const beerIconMousemove = document.querySelector("beer-icon-mousemove");
+>>>>>>> dev
 /*document.addEventListener = ('mousemove', function(event){
   $("#beer-icon-mousemove").animate({event.clientX, event.clientY});
 })*/
 
 
 window.addEventListener("mousemove", (event) => {
+<<<<<<< HEAD
   const imgBeer = document.createElement("img");
   imgBeer.src = "./Icons/beer.png";
   /*$(".imgBeer").animate({event.clientX, event.clientY});
   console.log(`Position de la souris : X = ${event.clientX} | Y = ${event.clientY}`);*/
   imgBeer.style.left = event.clientX;
   imgBeer.style.top = event.clientY;
+=======
+  beerIcon.classList.toggle("beerIconMousemove")
+  
+  console.log(`Position de la souris : X = ${event.clientX} | Y = ${event.clientY}`);
+>>>>>>> dev
   /*mousemove.style.left = e.pageX + "px";
   mousemove.style.top = e.pageY + "px";*/
 });

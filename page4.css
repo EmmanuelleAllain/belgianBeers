@@ -46,6 +46,11 @@ form {
   /*cette id met en forme le paragraphe de confirmation dès qu'on clique sur le bouton submit*/
   #confirmation-container {
       margin: 20px;
+  }
+
+  /*.beer-icon {
+    display: none;
+  }*/
 
   }
 

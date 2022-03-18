@@ -90,6 +90,7 @@ function createBar(name, imgSrc, link, descr1, descr2 = null){
 
     //creation of a list of description elements
     const descrList = document.createElement("ul"); 
+    descrList.style.display = 'Initial';
     bars.appendChild(descrList);
     //descrList.style.listStyleImage.src = './Icons/beer.png';
 
@@ -98,7 +99,11 @@ function createBar(name, imgSrc, link, descr1, descr2 = null){
     descrItem1.innerHTML = descr1;
     descrItem1.style.marginLeft = '10vW';
     descrItem1.style.fontSize = '4.5vw';
-    //descrItem1.style.listStyleImage = "url('./Icons/beer.png')";
+    descrItem1.style.border = 'none';
+    descrItem1.style.fontWeight = 'initial';
+    descrItem1.style.margin = '0 18vw 0 18vw';
+    descrItem1.style.padding = '1px';
+    descrItem1.style.listStyleImage = "url('./Icons/beer.jpg')";
     descrList.appendChild(descrItem1);
 
     if(descr2 !== null){ 
@@ -106,6 +111,11 @@ function createBar(name, imgSrc, link, descr1, descr2 = null){
         descrItem2.innerHTML = descr2;
         descrItem2.style.marginLeft = '10vW';
         descrItem2.style.fontSize = '4.5vw';
+        descrItem2.style.border = 'none';
+        descrItem2.style.fontWeight = 'initial';
+        descrItem2.style.margin = '0 18vw 0 18vw';
+        descrItem2.style.padding = '1px';
+        descrItem2.style.listStyleImage = "url('./Icons/beer.jpg')";
         descrList.appendChild(descrItem2);
     }
     
