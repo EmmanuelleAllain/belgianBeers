@@ -1,13 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  --main-first-color: #7fc3c0;
+  --main-second-color: #cfb845;
+  --main-third-color: #141414;
+}
+
+body{
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 .cards {
+  height: clamp(100px, 50%, 200px);
   margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .card {
+  background-color: #7fc3c0;
   border-radius: 10px;
-  width: 150px;
-  margin: 20px;
+  width: 40%;
+  margin: 3vw;
   display: flex;
   flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -17,24 +33,30 @@
   background-size: cover;
   background-position: center;
   background-image: url("beers_pictures/Maredsous triple.png");
+  background-color: white;
   height: 100px;
   width: 100%;
+  margin-top: 1vw;
 }
 .card-body {
-  padding: 10px 20px;
-}
-.card-body h2 {
-  margin: 10px 0px;
-}
-.card-button {
-  border: none;
-  border-radius: 10px;
-  height: 50px;
-  background-color: lightblue;
-  width: 100%;
+  padding: 2vw 2vW;
 }
 
 h2{
   font-size: 1.2rem;
 }
   
+.card-description{
+font-size: 2vw;
+background-color: black;
+color: var(--main-second-color);
+}
+
+.card-bitterness, .card-proof, .card-type{
+  font-size: 3vw;
+}
+
+.card-title{
+  font-size: 4vw;
+  margin: 0px;
+}
