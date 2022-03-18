@@ -8,7 +8,7 @@
 }
 
 footer{
-  position:absolute;
+  position:static;
   bottom: 0;
   border: var(--main-first-color) 10px ridge;
   border-top: none;
@@ -36,7 +36,7 @@ nav {
 }
 
 body{
-  background-color: rgb(207,184,69, 0.5);
+  background-color: white;
 }
 
 h1 {
@@ -45,13 +45,6 @@ h1 {
   margin-left: 1rem;
 }
 
-li{
-  list-style: none;
-  display: none;
-}
-
-ul{
-}
 
 .menu-button{
   justify-content: center;
