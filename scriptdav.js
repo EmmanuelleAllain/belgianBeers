@@ -5,6 +5,14 @@ menuButton.addEventListener("click", () => {
   menuList.classList.toggle("menuBurger");
 });
 
+/*
+const backToAccueil = document.querySelector(".backToAccueil");
+
+backToAccueil.addEventListener("click", () => {
+  
+});
+*/
+
 const belgianBeersTop10 = [
   {
     name: "Maredsous",
