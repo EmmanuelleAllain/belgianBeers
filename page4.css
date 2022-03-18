@@ -9,15 +9,16 @@ form {
   input {
     background-color: white;
     border: none;
-    width: 90%;
-    height: 25px;
+    width: 80vw;
     margin: 5px auto;
+    border-radius: 5%;
+    height: 25px;
     box-shadow: 2px 2px 5px var(--main-third-color);
   }
   
   label {
     margin: 5px auto;
-    width: 90%;
+    width: 80vw;
     color: var(--main-third-color);
   }
   
@@ -25,7 +26,7 @@ form {
     background-color: white;
     border: none;
     padding: 10px;
-    width: 90%;
+    width: 80vw;
     margin: 5px auto;
     box-shadow: 2px 2px 5px var(--main-third-color);
   }
@@ -45,5 +46,24 @@ form {
   /*cette id met en forme le paragraphe de confirmation dès qu'on clique sur le bouton submit*/
   #confirmation-container {
       margin: 20px;
+  }
 
+  /*.beer-icon {
+    display: none;
+  }*/
+
+  }
+
+  /*mise en forme pour bière qui bouge avec la souris
+  .beerIcon {
+    height: 50px;
+    width: 50px;
+  }*/
+
+  @media screen and (min-width: 800px) {
+  
+  input, label, select {
+    width: min(60vw, 700px);
+  }
+    
   }

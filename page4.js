@@ -12,6 +12,43 @@ const numberSelect = document.getElementById("number-select");
 form.addEventListener ("submit", function(event) {
   event.preventDefault();
   confirmationDiv.appendChild(confirmationText);
-  confirmationText.innerText = `Merci ${firstName.value} ! Votre inscription a bien été prise en compte voici le détail de votre réservation : Nom : ${name.value} Pénom : ${firstName.value} Evénement choisi : ${eventSelect.value} Nombre de personnes : ${numberSelect.value}`;
+  confirmationText.innerHTML = `Merci ${firstName.value} !<br>Votre inscription a bien été prise en compte <br>Voici le détail de votre réservation :<br> Nom : ${name.value} <br>Pénom : ${firstName.value}<br>Evénement choisi : ${eventSelect.value}<br>Nombre de personnes : ${numberSelect.value}`;
   confirmationText.classList.add('confirmation-text');
 });
+
+// ELEMENTS POUR LA BIERE QUI SUIT LA SOURIS
+
+<<<<<<< HEAD
+let beerIcon = document.querySelector(".beerIcon");
+
+=======
+const beerIcon = document.querySelector("beer-icon");
+const beerIconMousemove = document.querySelector("beer-icon-mousemove");
+>>>>>>> dev
+/*document.addEventListener = ('mousemove', function(event){
+  $("#beer-icon-mousemove").animate({event.clientX, event.clientY});
+})*/
+
+
+window.addEventListener("mousemove", (event) => {
+<<<<<<< HEAD
+  const imgBeer = document.createElement("img");
+  imgBeer.src = "./Icons/beer.png";
+  /*$(".imgBeer").animate({event.clientX, event.clientY});
+  console.log(`Position de la souris : X = ${event.clientX} | Y = ${event.clientY}`);*/
+  imgBeer.style.left = event.clientX;
+  imgBeer.style.top = event.clientY;
+=======
+  beerIcon.classList.toggle("beerIconMousemove")
+  
+  console.log(`Position de la souris : X = ${event.clientX} | Y = ${event.clientY}`);
+>>>>>>> dev
+  /*mousemove.style.left = e.pageX + "px";
+  mousemove.style.top = e.pageY + "px";*/
+});
+/*window.addEventListener("mousedown", () => {
+  mousemove.style.transform = "scale(2) translate(-25%, -25%)";
+});
+window.addEventListener("mouseup", () => {
+  mousemove.style.transform = "scale(1) translate(-50%, -50%)";
+});*/
