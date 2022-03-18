@@ -33,6 +33,10 @@ li {
   font-weight: bolder;
 }
 
+a {
+  text-decoration: none;
+}
+
 .menuButton {
   border: none;
   border-radius: 15px;
