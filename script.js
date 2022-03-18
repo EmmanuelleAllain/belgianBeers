@@ -1,0 +1,162 @@
+const cards = document.querySelector(".cards");
+
+const belgianBeersTop10 = [
+
+    {
+        name: "Maredsous",
+        bitterness: "2 / 5",
+        proof: "10°",
+        type: "Triple d'Abbaye",
+        beerspicture: "beers_pictures/Maredsous triple.png",
+        beersdescription: "Saveurs de caramel, d'épices, de fruits et de bois.",
+    },
+    {
+        name: "Rochefort 6",
+        bitterness: "2 / 5",
+        proof: "7,5°",
+        type: "Dubbel trappiste",
+        color: "Brune",
+        beerspicture: "beers_pictures/Rochefort 6.png",
+        beersdescription: "Equilibre entre sucre et amertume",
+    },
+    {
+        name: "Saint Feuillien blonde",
+        bitterness: "2 / 5",
+        proof: "7,5°",
+        type: "Pale Ale d'Abbaye",
+        color: "Blonde",
+        beerspicture: "beers_pictures/St Feuillien blonde.png",
+        beersdescription: "Saveurs de blé, de coriandre, d'épices et de levure.",
+    },
+    {
+        name: "Paix Dieu",
+        bitterness: "2 / 5",
+        proof: "10°",
+        type: "Triple",
+        color: "Blonde",
+        beerspicture: "beers_pictures/Paix dieu.png",
+        beersdescription: "Saveurs douces et houblonnées, avec des notes de fruits, de levure, de coriandre et d'épices.",
+    },
+    {
+        name: "Corne du bois des pendus black",
+        bitterness: "2 / 5",
+        proof: "8°",
+        type: "Strong Ale",
+        color: "Noire",
+        beerspicture: "beers_pictures/Corne du bois des pendus black.png",
+        beersdescription: "Saveurs puissantes de chocolat, de café, de caramel, de malt torréfié, de vieux rhum, de chêne et d'alcool.",
+    },
+    {
+        name: "Troubadour magma",
+        bitterness: "3 / 5",
+        proof: "9°",
+        type: "IPA",
+        color: "Ambrée",
+        beerspicture: "beers_pictures/Troubadour magma.png",
+        beersdescription: "Saveurs de houblon, de malt, de levure, d'épices, d'agrumes et de caramel.",
+    },
+    {
+        name: "Hoegaarden",
+        bitterness: "1 / 5",
+        proof: "4,9°",
+        type: "Blanche",
+        color: "Blanche",
+        beerspicture: "beers_pictures/Hoegaarden blanche.png",
+        beersdescription: "Goût fruité, douce présence de la coriandre et belle amertume",
+    },
+    {
+        name: "Mort Subite Gueuze Lambic",
+        bitterness: "2 / 5",
+        proof: "4,5°",
+        type: "Lambic",
+        color: "Blonde",
+        beerspicture: "beers_pictures/Mort Subite Gueuze Lambic.png",
+        beersdescription: "Avec son goût acidulé, et quelques notes de pommes vertes et de fruits, cette bière saura attirer les adeptes de finesse et de légèreté.",
+    },
+    {
+        name: "Peche mel’Bush",
+        bitterness: "1 / 5",
+        proof: "8,5°",
+        type: "Lambic",
+        color: "Ambrée",
+        beerspicture: "beers_pictures/Peche mel’Bush.png",
+        beersdescription: "Saveurs de pêche, de malt et de miel.",
+    },
+    {
+        name: "Lupulus Hopera",
+        bitterness: "2 / 5",
+        proof: "6°",
+        type: "Pale Ale",
+        color: "Blonde",
+        beerspicture: "beers_pictures/Lupulus Hopera.png",
+        beersdescription: "Saveurs de malt, de houblon, de fleurs, d'épices et de levure.",
+    },
+
+];
+
+<<<<<<< HEAD
+function createCard(title, imageUrl) {
+    const card = document.createElement("div");
+    card.classList.add("card");
+    cards.appendChild(card);
+  
+    const cardHeader = document.createElement("div");
+    cardHeader.classList.add("card-header");
+    card.appendChild(cardHeader);
+  
+    const cardImg = document.createElement("div");
+    cardImg.style.backgroundImage = `url(${imageUrl})`;
+    cardImg.classList.add("card-img");
+    cardHeader.appendChild(cardImg);
+  
+    // Step1: Create the cardBody div, add the class card-body and add it to the card
+  
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+    card.appendChild(cardBody);
+  
+    // Step2: Create the cardTitle h2, add the class card-title,
+    // set the text inside the tag to the "title" parameter of this function
+    // and add it to the cardBody
+  
+    const cardTitle = document.createElement("h2");
+    cardTitle.classList.add("card-title");
+    cardTitle.innerHTML = `${title}`;
+    cardBody.appendChild(cardTitle);
+  
+    // Step3: Create the cardButton button, add the class card-button,
+    // set the text inside the tag to be "Adopt Now"
+    // and add it to the cardBody
+  
+    const cardBtn = document.createElement("button");
+    cardBtn.classList.add("card-button");
+    cardBtn.innerHTML = `Adopt Now`;
+    cardBody.appendChild(cardBtn);
+  }
+  
+  /* Step 4: Create a for loop, for each element of the array, 
+   call the function createCard with the corresponding parameter */
+  
+  for (let i = 0; i < belgianBeersTop10.length; i++) {
+    createCard(belgianBeersTop10[i].name, belgianBeersTop10[i].beerspicture);
+  }
+  
+=======
+// ELEMENTS POUR LE FORMULAIRE
+const form = document.querySelector("form");
+const confirmationText = document.createElement('p');
+const confirmationDiv = document.getElementById('confirmation-container');
+const firstName = document.getElementById("firstName");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const eventSelect = document.getElementById("event-select");
+const numberSelect = document.getElementById("number-select");
+
+// Au clic, les éléments sélectionnés par l'internaute apparaisse sous le formulaire
+form.addEventListener ("submit", function(event) {
+  event.preventDefault();
+  confirmationDiv.appendChild(confirmationText);
+  confirmationText.innerText = `Merci ${firstName.value} ! Votre inscription a bien été prise en compte voici le détail de votre réservation : Nom : ${name.value} Pénom : ${firstName.value} Evénement choisi : ${eventSelect.value} Nombre de personnes : ${numberSelect.value}`;
+  confirmationText.classList.add('confirmation-text');
+});
+>>>>>>> dev
