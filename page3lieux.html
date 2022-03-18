@@ -4,16 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Où déguster</title>
+    <link href="styledav.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="page3lieux.css" rel="stylesheet" type="text/css" />
   </head>
   <header>
+    <div>
+      <button class="backToAccueil">
+        <img class="flag" src="./Icons/belgian_flag.jpg" alt="" />
+        <li><a href="PageAccueil.html">Accueil</a></li>
+      </button>
+      <h1 class="welcome">Bienvenue, une fois !</h1>
+      <button class="menuButton">
+        <img class="menuIcon" src="./Icons/menu_icon.png" alt="" />
+      </button>
+    </div>
     <nav>
-      <h1 class="bienvenueUneFois">Bienvenue une fois !</h1>
       <ul>
-        <button class="menuButton">Menu</button>
-        <li class="topTen">Top 10 des bières belges</li>
-        <li class="placeToTaste">Où déguster sa bière belge</li>
-        <li class="nextEvent">Ma prochaine sortie</li>
+        <li><a href="PageTop10.html">Top 10 des bières belges</a></li>
+        <li><a href="page3lieux.html">Où déguster sa bière belge</a></li>
+        <li><a href="indexPage4.html">Ma prochaine sortie</a></li>
       </ul>
     </nav>
   </header>
@@ -33,8 +43,6 @@
     <ul>
       <li>Grand choix de bières</li>
       <li>Déco sympa</li>
-    </ul>
-
     <h2 class="bars-name">Hopstore</h2>
     <img class="bars-img" src="./places/Hopstore.jpeg" alt="bar Hopstore" />
     <button>
@@ -95,11 +103,16 @@
         Les "heures heureuses" : joue à pile ou face le prix de ta bière !
       </li>
     </ul>
+    <script src="scriptdav.js"></script>
+      <div class="bars">        
+    </div>
+    <script src="page3lieux.js"></script>
   </body>
   <footer>
-    <p>Aucune bière n'a été blessée pendant la conception de ce site web</p>
-    <p>Copyright</p>
-    <p>Images libres de droits</p>
-    <p>L'abus d'alcool est dangereux pour la santé</p>
+    <p>
+      Aucune bière n'a été blessée pendant la conception de ce site web<br />
+      Copyright : Images libres de droits<br />
+      L'abus d'alcool est dangereux pour la santé
+    </p>
   </footer>
 </html>

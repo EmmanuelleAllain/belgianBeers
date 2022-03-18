@@ -94,7 +94,6 @@ const belgianBeersTop10 = [
 
 ];
 
-
 function createCard(title, bitterness, proof, type, description, picture) {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -160,4 +159,3 @@ function createCard(title, bitterness, proof, type, description, picture) {
   for (let i = 0; i < belgianBeersTop10.length; i++) {
     createCard(belgianBeersTop10[i].name, belgianBeersTop10[i].bitterness, belgianBeersTop10[i].proof, belgianBeersTop10[i].type, belgianBeersTop10[i].beersdescription, belgianBeersTop10[i].beerspicture);
   }
-
