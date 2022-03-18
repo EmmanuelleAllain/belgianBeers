@@ -6,6 +6,15 @@
   --main-second-color: #cfb845;
   --main-third-color: #141414;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: none;
+}
+
 .flag {
   width: auto;
   height: 100px;
@@ -20,21 +29,12 @@ p {
 p span {
   font-weight: bold;
 }
-h2 {
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
 li {
   border: 2px solid;
   border-radius: 15px;
   margin: 15px;
   padding: 5px;
   font-weight: bolder;
-}
-
-a {
-  text-decoration: none;
 }
 
 .menuButton {
@@ -64,10 +64,6 @@ header div {
   height: auto;
 }
 
-ul {
-  display: none;
-}
-
 .menuBurger {
   display: flex;
   justify-content: center;
@@ -76,6 +72,14 @@ ul {
   margin-left: 220px;
   margin-right: 220px;
 }
+
+#pageAccueil {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 footer p {
   position: relative;
   bottom: 0px;
