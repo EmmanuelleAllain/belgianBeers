@@ -1,49 +1,66 @@
 /* PAGE FORMULAIRE (EVENTS)*/
 form {
-    display: flex;
-    flex-direction: column;
-    /*box-sizing: border-box;*/
-  
-  }
-  
-  input {
-    background-color: white;
-    border: none;
-    width: 90%;
-    height: 25px;
-    margin: 5px auto;
-    box-shadow: 2px 2px 5px var(--main-third-color);
-  }
-  
-  label {
-    margin: 5px auto;
-    width: 90%;
-    color: var(--main-third-color);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  /*box-sizing: border-box;*/
+}
+
+input {
+  background-color: white;
+  border: none;
+  width: 80vw;
+  margin: 5px auto;
+  border-radius: 5%;
+  height: 25px;
+  box-shadow: 2px 2px 5px var(--main-third-color);
+}
+
+label {
+  margin: 5px auto;
+  width: 80vw;
+  color: var(--main-third-color);
+}
+
+select {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  width: 80vw;
+  margin: 5px auto;
+  box-shadow: 2px 2px 5px var(--main-third-color);
+}
+
+#eventSubmit {
+  margin: 40px auto;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  background-color: var(--main-first-color);
+}
+
+h2.events {
+  text-align: center;
+}
+
+/*cette id met en forme le paragraphe de confirmation dès qu'on clique sur le bouton submit*/
+#confirmation-container {
+  margin: 20px;
+}
+
+/*.beer-icon {
+    display: none;
+  }*/
+
+/*mise en forme pour bière qui bouge avec la souris
+  .beerIcon {
+    height: 50px;
+    width: 50px;
+  }*/
+
+@media screen and (min-width: 800px) {
+  input,
+  label,
   select {
-    background-color: white;
-    border: none;
-    padding: 10px;
-    width: 90%;
-    margin: 5px auto;
-    box-shadow: 2px 2px 5px var(--main-third-color);
+    width: min(60vw, 700px);
   }
-  
-  #eventSubmit {
-    margin: 40px auto;
-    padding: 10px;
-    width: 200px;
-    height: auto;
-    background-color: var(--main-first-color);
-  }
-  
-  h2.events {
-    text-align: center;
-  }
-
-  /*cette id met en forme le paragraphe de confirmation dès qu'on clique sur le bouton submit*/
-  #confirmation-container {
-      margin: 20px;
-
-  }
+}

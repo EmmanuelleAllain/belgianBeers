@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Evènements</title>
+    <title>Evénements</title>
     <link href="styledav.css" rel="stylesheet" type="text/css" />
     <link href="page4.css" rel="stylesheet" type="text/css" />
   </head>
   <header>
     <div>
       <button class="backToAccueil">
-        <img class="flag" src="./Icons/belgian_flag.jpg" alt="" />
-        <li><a href="PageAccueil.html">Accueil</a></li>
+        <li>
+          <a href="PageAccueil.html"
+            ><img class="flag" src="./Icons/belgian_flag.jpg" alt=""
+          /></a>
+        </li>
       </button>
       <h1 class="welcome">Bienvenue, une fois !</h1>
       <button class="menuButton">
@@ -27,6 +30,10 @@
     </nav>
   </header>
   <body>
+
+  <!--Elements pour bière qui suit la souris (à déplacer par la suite)-->
+  <div class="beer-icon"></div>
+
     <h2 class="events">Inscrivez-vous à nos prochains évènements</h2>
     <form action="" class="eventForm">
       <label for="name">Nom* </label>
@@ -39,9 +46,9 @@
       <label for="event-select">Quel évènement t'intéresse ?</label>
       <select name="events" id="event-select">
         <option value="">--Choisis une option--</option>
-        <option value="Event1">Event1</option>
-        <option value="Event2">Event2</option>
-        <option value="Event3">Event3</option>
+        <option value="Event1">Beer pong sur le plateau</option>
+        <option value="Event2">Happy hour aux vieux garçons</option>
+        <option value="Event3">Beer tasting sur la terrasse des Java</option>
       </select>
 
         <label for="number-select">Combien de personnes souhaitent participer ?</label>
@@ -56,6 +63,7 @@
             <option value="7">7 personnes</option>
             <option value="8">8 personnes</option>
             <option value="9">9 personnes</option>
+            <option value="10">toute la promo</option>
         </select>
         <input type="submit"
         value="Valider l'inscription"
@@ -69,7 +77,7 @@
 
     <script src="page4.js"></script>
     </form>
-    <script src="scriptdav.js"></script>
+    <script src="script.js"></script>
   </body>
   <footer>
     <p>
