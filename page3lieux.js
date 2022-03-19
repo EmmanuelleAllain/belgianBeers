@@ -1,5 +1,6 @@
 const bars = document.querySelector(".bars");
 
+
 const barList = [
     {
         nameOfBar : 'Dikkenek',
@@ -49,30 +50,19 @@ const barList = [
 function createBar(name, imgSrc, link, descr1, descr2 = null){
     //creation of h2 element with the title of the pub, argument name
     const barName = document.createElement("h2");
-    barName.classList.add = ("bars-name");
+    barName.className = "bars-name"
     barName.innerHTML = name;
-
-    barName.style.padding = '25px 0 10px 0';
-    barName.style.marginLeft = '10vw';
-    barName.style.fontSize = '6vw';
-    barName.style.color = "#7fc3c0";
     bars.appendChild(barName);
 
     //creation of image element with a picture of the pub, argument imgSrc
     const barImg = document.createElement("img");
-    barImg.classList.add = ("bars-img");
+    barImg.className = "bars-img";
     barImg.src = imgSrc;
-
-    barImg.style.display = 'block';
-    barImg.style.width = '80vw';
-    barImg.style.height = 'auto';
-    barImg.style.marginLeft = 'auto';
-    barImg.style.marginRight = 'auto';
-    barImg.style.borderRadius = '2%';
     bars.appendChild(barImg);
 
     //creation of the button section within the bars class
     const linkButton = document.createElement("button");
+    linkButton.className = "link-btn";
     bars.appendChild(linkButton);
 
     //creation of the link section with the link of pub's localisation, argument link
@@ -85,37 +75,39 @@ function createBar(name, imgSrc, link, descr1, descr2 = null){
     const linkImg = document.createElement("img");
     linkImg.src = "./Icons/feet.png";
     linkImg.alt = "barRoute";
-    linkImg.style.width = '10vw';
+    /*linkImg.style.width = '10vw';*/
     barLink.appendChild(linkImg);
 
     //creation of a list of description elements
     const descrList = document.createElement("ul"); 
-    descrList.style.display = 'Initial';
+    descrList.className = "descr-list";
+    descrList.classList.add = ("descr-list");
+    /*descrList.style.display = 'initial';*/
     bars.appendChild(descrList);
     //descrList.style.listStyleImage.src = './Icons/beer.png';
 
     //creation of description element, argument descr1
     const descrItem1 = document.createElement("li");
+    descrItem1.className = "bar-descr1";
     descrItem1.innerHTML = descr1;
-    descrItem1.style.marginLeft = '10vW';
-    descrItem1.style.fontSize = '4.5vw';
+    /*descrItem1.style.fontSize = '4.5vw';
     descrItem1.style.border = 'none';
     descrItem1.style.fontWeight = 'initial';
     descrItem1.style.margin = '0 18vw 0 18vw';
     descrItem1.style.padding = '1px';
-    descrItem1.style.listStyleImage = "url('./Icons/beer.jpg')";
+    descrItem1.style.listStyleImage = "url('./Icons/beer.jpg')";*/
     descrList.appendChild(descrItem1);
 
     if(descr2 !== null){ 
         const descrItem2 = document.createElement("li");
+        descrItem2.className = "bar-descr2";
         descrItem2.innerHTML = descr2;
-        descrItem2.style.marginLeft = '10vW';
-        descrItem2.style.fontSize = '4.5vw';
+        /*descrItem2.style.fontSize = '4.5vw';
         descrItem2.style.border = 'none';
         descrItem2.style.fontWeight = 'initial';
         descrItem2.style.margin = '0 18vw 0 18vw';
         descrItem2.style.padding = '1px';
-        descrItem2.style.listStyleImage = "url('./Icons/beer.jpg')";
+        descrItem2.style.listStyleImage = "url('./Icons/beer.jpg')";*/
         descrList.appendChild(descrItem2);
     }
     
