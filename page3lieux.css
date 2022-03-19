@@ -6,30 +6,39 @@
     --main-third-color : #141414;
   }
 
+.bars-name{
+    padding : 25px 0 10px 0;
+    margin-left: 10vw;
+    font-size : 6vw;
+    color :var(--main-first-color);
+}
+
 .bars-img{
     display: block;
     width: 80vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
-.bars-name{
-    padding: 25px 0 10px 0;
-    margin-left: 10vw;
+.bars>button>a>img{
+    width: 10vw;
 }
 
-.bars>button>a{
-    text-decoration: none;
-    background-color: transparent;
-    color: var(--main-first-color);
+.descr-list{
+    display: initial;
+}
+
+.bar-descr1, .bar-descr2{
+    font-size: 3.5vw;
     border: none;
-    font-size: 15px;
-    font-weight: 500;
+    font-weight: initial;
+    margin: 0 18vw 0  18vw;
+    padding: 1px;
+    list-style-image: url('./Icons/beer.jpg');
 }
-
-.bars>button{
+.link-btn{
     margin-top: 5px;
     margin-right: 10vw;
     width: 80vw;
@@ -38,7 +47,4 @@
     display: flex;
     justify-content: right;
     margin-left: auto;
-}
-.route>img{
-    width: 8vw;
 }
