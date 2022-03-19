@@ -91,14 +91,16 @@ header div {
   margin-bottom: 20px;
 }
 
-footer p {
+footer {
   position: relative;
-  bottom: 0px;
+  border-radius: 15px;
+  background-color: var(--main-first-color);
+}
+
+footer p {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
-  background-color: var(--main-first-color);
-  border-radius: 15px;
 }
 
 @media screen and (min-width: 793px) {
