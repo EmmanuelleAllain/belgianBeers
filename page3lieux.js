@@ -1,5 +1,6 @@
 const bars = document.querySelector(".bars");
 
+
 const barList = [
     {
         nameOfBar : 'Dikkenek',
@@ -79,6 +80,7 @@ function createBar(name, imgSrc, link, descr1, descr2 = null, mapFrame){
     linkButton.className = "link-btn";
     barFooter.appendChild(linkButton);
 
+
     //creation of the link section with the link of pub's localisation, argument link
     const barLink = document.createElement("a");
     barLink.href = link;
@@ -97,7 +99,9 @@ function createBar(name, imgSrc, link, descr1, descr2 = null, mapFrame){
     descrList.className = "descr-list";
     descrList.classList.add = ("descr-list");
     /*descrList.style.display = 'initial';*/
+
     barFooter.appendChild(descrList);
+
     //descrList.style.listStyleImage.src = './Icons/beer.png';
 
     //creation of description element, argument descr1
