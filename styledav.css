@@ -15,24 +15,47 @@ ul {
   display: none;
 }
 
+h1 {
+  font-size: 25px;
+}
+
 .flag {
-  width: auto;
-  height: 100px;
+  width: 70px;
+  height: 80px;
   border-radius: 15px;
 }
 
-p {
-  text-align: justify;
-  padding-left: 10px;
-  padding-right: 10px;
+#welcome {
+  margin: 10px;
+  text-align: center;
+  vertical-align: center;
 }
+
+#firstParagraph {
+  text-align: center;
+  padding: 15px;
+}
+
+#secondParagraph {
+  text-align: center;
+  padding: 15px;
+}
+
 p span {
   font-weight: bold;
 }
-li {
+
+#thirdParagraph {
+  text-align: center;
+}
+
+nav li {
   border: 2px solid;
   border-radius: 15px;
-  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50;
+  margin-right: 50;
   padding: 5px;
   font-weight: bolder;
 }
@@ -40,13 +63,13 @@ li {
 .menuButton {
   border: none;
   border-radius: 15px;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 80px;
 }
 
 .menuButton > img {
-  width: 70%;
-  height: 80%;
+  width: 70px;
+  height: 60px;
 }
 
 header div {
@@ -57,7 +80,14 @@ header div {
   border-radius: 15px;
 }
 
-#production {
+#imgProduction {
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+#imgSortOfBeer {
   display: flex;
   border-radius: 20px;
   width: 100%;
@@ -69,23 +99,94 @@ header div {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-left: 220px;
-  margin-right: 220px;
 }
 
 #pageAccueil {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-footer p {
+footer {
   position: relative;
-  bottom: 0px;
+  border-radius: 15px;
+  background-color: var(--main-first-color);
+}
+
+footer p {
   font-size: 12px;
   font-weight: bold;
-  text-align: center;
-  background-color: var(--main-first-color);
-  border-radius: 15px;
+}
+
+@media screen and (min-width: 793px) {
+  #firstParagraph {
+    text-align: justify;
+  }
+  #secondParagraph {
+    text-align: justify;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menuButton {
+    visibility: hidden;
+  }
+  .welcome {
+    font-size: 50px;
+    margin-top: 25px;
+  }
+  #pageAccueil {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  #doYounKnow {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+  }
+
+  #firstParagraph {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+  }
+
+  #stepOfFabrication {
+    grid-column-start: 2;
+    grid-row: 1;
+  }
+
+  #secondParagraph {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #imgProduction {
+    grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-radius: 20px;
+    max-width: 850px;
+    height: auto;
+  }
+
+  #sortOfBeer {
+    grid-column-start: 3;
+    grid-row: 1;
+  }
+
+  #imgSortOfBeer {
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-radius: 20px;
+    max-width: 800px;
+    height: auto;
+  }
 }
