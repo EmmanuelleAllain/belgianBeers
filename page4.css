@@ -5,7 +5,6 @@ form {
   /*box-sizing: border-box;*/
 }
 
-<<<<<<< HEAD
   /*cette id met en forme le container du paragraphe de confirmation dès qu'on clique sur le bouton submit*/
   #confirmation-container {
       margin: 20px;
@@ -17,7 +16,6 @@ form {
     text-align: center;
 
   }
-=======
 input {
   background-color: white;
   border: none;
@@ -27,7 +25,6 @@ input {
   height: 25px;
   box-shadow: 2px 2px 5px var(--main-third-color);
 }
->>>>>>> dev
 
 label {
   margin: 5px auto;
@@ -61,19 +58,15 @@ h2.events {
   margin: 20px;
 }
 
-/*.beer-icon {
-    display: none;
-  }*/
-
-<<<<<<< HEAD
-  /*mise en forme pour bière qui bouge avec la souris
-=======
-/*mise en forme pour bière qui bouge avec la souris
->>>>>>> dev
-  .beerIcon {
-    height: 50px;
-    width: 50px;
-  }*/
+/*mise en forme pour bière qui bouge avec la souris*/
+  .cursor {
+    height: 40px;
+    width: 40px;
+    cursor: none;
+    background-image: url("./Icons/beer.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+  }
 
 @media screen and (min-width: 800px) {
   input,
