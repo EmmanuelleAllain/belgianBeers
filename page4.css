@@ -5,6 +5,17 @@ form {
   /*box-sizing: border-box;*/
 }
 
+  /*cette id met en forme le container du paragraphe de confirmation dès qu'on clique sur le bouton submit*/
+  #confirmation-container {
+      margin: 20px;
+      background-color: var(--main-first-color);
+  }
+
+  /* cette class met en forme le paragraphe en lui-même*/
+  .conf-text {
+    text-align: center;
+
+  }
 input {
   background-color: white;
   border: none;
@@ -47,15 +58,15 @@ h2.events {
   margin: 20px;
 }
 
-/*.beer-icon {
-    display: none;
-  }*/
-
-/*mise en forme pour bière qui bouge avec la souris
-  .beerIcon {
-    height: 50px;
-    width: 50px;
-  }*/
+/*mise en forme pour bière qui bouge avec la souris*/
+  .cursor {
+    height: 40px;
+    width: 40px;
+    cursor: none;
+    background-image: url("./Icons/beer.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+  }
 
 @media screen and (min-width: 800px) {
   input,
