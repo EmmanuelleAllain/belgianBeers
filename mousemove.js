@@ -1,4 +1,4 @@
-// ELEMENTS POUR LA BIERE QUI SUIT LA SOURIS
+// ELEMENTS POUR LA BIERE QUI SUIT LA SOURIS (cette page n'est plus utile)
 
 let cursor = document.querySelector('.cursor-beer');
 

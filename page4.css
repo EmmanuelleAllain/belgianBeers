@@ -1,7 +1,6 @@
 /* CURSEUR */
-
 body {
-  cursor: url("./Icons/beer_icon.png"), pointer;
+  cursor: url("./Icons/beer.jpg"), pointer;
 }
 
 /* PAGE FORMULAIRE (EVENTS)*/
@@ -55,6 +54,11 @@ select {
   background-color: var(--main-first-color);
 }
 
+#eventSubmit:hover {
+  font-weight: bold;
+  color: white;
+}
+
 h2.events {
   text-align: center;
 }
@@ -62,6 +66,7 @@ h2.events {
 /*cette id met en forme le paragraphe de confirmation dès qu'on clique sur le bouton submit*/
 #confirmation-container {
   margin: 20px;
+  box-shadow: 2px 2px 5px var(--main-third-color);
 }
 
 /*mise en forme pour bière qui bouge avec la souris
@@ -79,5 +84,11 @@ h2.events {
   label,
   select {
     width: min(60vw, 700px);
+  }
+
+  #confirmation-container {
+    width: max(50vw);
+    margin: 10px auto;
+    
   }
 }
