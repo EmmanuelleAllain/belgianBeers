@@ -1,3 +1,9 @@
+/* CURSEUR */
+
+body {
+  cursor: url("./Icons/beer_icon.png"), pointer;
+}
+
 /* PAGE FORMULAIRE (EVENTS)*/
 form {
   display: flex;
@@ -8,7 +14,7 @@ form {
   /*cette id met en forme le container du paragraphe de confirmation dès qu'on clique sur le bouton submit*/
   #confirmation-container {
       margin: 20px;
-      background-color: var(--main-first-color);
+      background-color: var(--main-second-color);
   }
 
   /* cette class met en forme le paragraphe en lui-même*/
@@ -58,15 +64,15 @@ h2.events {
   margin: 20px;
 }
 
-/*mise en forme pour bière qui bouge avec la souris*/
-  .cursor {
+/*mise en forme pour bière qui bouge avec la souris
+  .cursor-beer {
     height: 40px;
     width: 40px;
     cursor: none;
     background-image: url("./Icons/beer.jpg");
     background-repeat: no-repeat;
     position: absolute;
-  }
+  }*/
 
 @media screen and (min-width: 800px) {
   input,
