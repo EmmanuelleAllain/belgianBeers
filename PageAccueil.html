@@ -8,43 +8,53 @@
   </head>
   <header>
     <div>
-      <h1 class="welcome">Bienvenue, une fois !</h1>
-      <img class="flag" src="./Icons/belgian_flag.jpg" alt="" />
+      <li>
+          <a href="PageAccueil.html"
+            ><img class="flag" src="./Icons/belgian_flag.jpg" alt=""
+          /></a>
+      </li>
+      <h1 id="welcome">Bienvenue, une fois !</h1>
       <button class="menuButton">
-        <img src="./Icons/menu_icon.png" alt="" />
+        <img class="menuIcon" src="./Icons/menu_icon.png" alt="" />
       </button>
     </div>
     <nav>
       <ul>
-        <li>Top 10 des bières belges</li>
-        <li>Où déguster sa bière belge</li>
-        <li>Ma prochaine sortie</li>
+        <li><a href="PageTop10.html">Top 10 des bières belges</a></li>
+        <li><a href="page3lieux.html">Où déguster sa bière belge</a></li>
+        <li><a href="indexPage4.html">Ma prochaine sortie</a></li>
       </ul>
     </nav>
   </header>
   <body>
-    <h2>Le saviez-vous ?</h2>
-    <br />
-    <p>
-      C'est une boisson obtenue par<span> fermentation alcoolique </span>d'un
-      moût de produits à l'issue du brassage. C'est la<span>
-        plus ancienne boisson alcoolisée
-      </span>
-      connue au monde et <span> la plus consommée après</span> l'eau et le thé.
-    </p>
-    <p>
-      En Belgique, il existe trois type de Fermentation : haute, basse et
-      spontanée.
-    </p>
-    <br />
-    <h2>Comment se fabrique-t-elle ?</h2>
-    <br />
-    <img id="production" src="./Icons/etapes_fabrication_biere_maison.png" />
-    <script src="scriptdav.js"></script>
+    <section id="pageAccueil">
+      <h2 id="doYouKnow">Le saviez-vous ?</h2>
+      <br />
+      <p id="firstParagraph">
+        C'est une boisson obtenue par <span> fermentation alcoolique </span> d'un moût de produits à l'issue du brassage.<br></br>
+        C'est la <span> plus ancienne </span> boisson alcoolisée connue au monde et <span> la plus consommée </span> après l'eau et le thé.     
+      </p>
+      <br />
+      <h2 id="stepOfFabrication">Comment se fabrique-t-elle ?</h2>
+      <br />
+      <img id="imgProduction" src="./Icons/etapes_fabrication_biere_maison.png" />
+      <p id="secondParagraph">
+        La consommation de bière est à l'origine de nombreux évènements festifs : Fête de la bière, Mondial de la bière, Journée
+        internationale de la bière.
+        <br></br>
+        Des versions très faiblement alcoolisées (variant de 2° à 0°) sont
+        présentes sur le marché. Contrairement aux autres boissons « sans alcool
+        », elles sont élaborées par les mêmes procédés que la bière classique.
+      </p>
+      <h2 id="sortOfBeer">En Belgique: trois Fermentation. Haute, basse et
+        spontanée.</h2>
+      <img id="imgSortOfBeer" src="./Icons/Types-de-fermenations-1.jpg" />
+    </section>
+    <script src="script.js"></script>
   </body>
   <footer>
-    <p>
-      Aucune bière n'a été blessée pendant la conception de ce site web<br />
+    <p id="thirdParagraph">
+      Aucune bière n'a été blessée pendant la conception de ce site<br />
       Copyright : Images libres de droits<br />
       L'abus d'alcool est dangereux pour la santé
     </p>

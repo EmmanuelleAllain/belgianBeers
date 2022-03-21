@@ -12,6 +12,8 @@ const numberSelect = document.getElementById("number-select");
 form.addEventListener ("submit", function(event) {
   event.preventDefault();
   confirmationDiv.appendChild(confirmationText);
-  confirmationText.innerText = `Merci ${firstName.value} ! Votre inscription a bien été prise en compte voici le détail de votre réservation : Nom : ${name.value} Pénom : ${firstName.value} Evénement choisi : ${eventSelect.value} Nombre de personnes : ${numberSelect.value}`;
+  confirmationText.classList.add("conf-text");
+  confirmationText.innerHTML = `<strong>Merci ${firstName.value}</strong> !<br>Voici le détail de votre réservation :<br> Nom : ${name.value} <br>Pénom : ${firstName.value}<br>Evénement choisi : ${eventSelect.value}<br>Nombre de personnes : ${numberSelect.value}`;
   confirmationText.classList.add('confirmation-text');
 });
+
