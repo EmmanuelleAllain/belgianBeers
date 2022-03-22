@@ -2,54 +2,61 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  --main-first-color: #7fc3c0;
+  --main-first-color: white;
   --main-second-color: #cfb845;
   --main-third-color: #141414;
   font-family: Verdana, Tahoma, sans-serif;
 }
-
 a {
   text-decoration: none;
+  color: var(--main-first-color);
 }
-
+#header {
+  border-bottom: #141414 2px solid;
+}
+#beer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-weight: bolder;
+  color: #141414;
+}
 ul {
   display: none;
 }
-
 h1 {
   font-size: 25px;
 }
-
 .flag {
   width: 70px;
   height: 80px;
   border-radius: 15px;
 }
-
+.imgPageTop10 {
+  display: flex;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
 #welcome {
   margin: 10px;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
+  font-size: 30px;
 }
-
-#firstParagraph {
+#youKnow,
+#stepOfFabrication,
+#sortOfBeer,
+#firstParagraph,
+#secondParagraph,
+#thirdParagraph,
+#fourthParagraph {
   text-align: center;
-  padding: 15px;
+  margin: 10px;
 }
-
-#secondParagraph {
-  text-align: center;
-  padding: 15px;
-}
-
 p span {
   font-weight: bold;
 }
-
-#thirdParagraph {
-  text-align: center;
-}
-
 nav li {
   border: 2px solid;
   border-radius: 15px;
@@ -60,48 +67,45 @@ nav li {
   padding: 5px;
   font-weight: bolder;
 }
-
 .menuButton {
   border: none;
   border-radius: 15px;
   width: 70px;
   height: 80px;
 }
-
 .menuButton > img {
   width: 70px;
   height: 60px;
 }
-
 header div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--main-first-color);
   padding: 15px;
   border-radius: 15px;
 }
-
 #imgProduction {
   display: flex;
   border-radius: 20px;
   width: 100%;
   height: auto;
 }
-
 #imgSortOfBeer {
   display: flex;
   border-radius: 20px;
   width: 100%;
   height: auto;
 }
-
 .menuBurger {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  background-image: url("./Icons/belgianFlag.jpg");
+  background-size: 100%, auto;
+  background-repeat: no-repeat;o;
+  color: white;
 }
-
 #pageAccueil {
   display: flex;
   flex-wrap: wrap;
@@ -110,84 +114,79 @@ header div {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 footer {
   position: relative;
   border-radius: 15px;
   background-color: var(--main-first-color);
 }
-
 footer p {
   font-size: 12px;
   font-weight: bold;
 }
-
+#fourthParagraph {
+  border-top: #141414 2px solid;
+  padding-top: 15px;
+  }
 @media screen and (min-width: 793px) {
-  #firstParagraph {
+  #firstParagraph,
+  #secondParagraph,
+  #thirdParagraph {
     text-align: justify;
   }
-  #secondParagraph {
-    text-align: justify;
-  }
-  ul {
+  #ulHeader {
     display: flex;
     justify-content: space-evenly;
+    background-image: url("./Icons/belgianFlag.jpg");
+    background-size: 100%, auto;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    color: white;
   }
   .menuButton {
     visibility: hidden;
   }
-  .welcome {
+  #welcome {
     font-size: 50px;
-    margin-top: 25px;
+    vertical-align: middle;
   }
   #pageAccueil {
     display: grid;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    gap: 20px;
   }
-
-  #doYounKnow {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  #doYouKnow {
+    grid-column: 1;
     grid-row: 1;
   }
-
   #firstParagraph {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 1;
     grid-row: 2;
   }
-
-  #stepOfFabrication {
-    grid-column-start: 2;
-    grid-row: 1;
-  }
-
   #secondParagraph {
     grid-column: 1;
     grid-row: 3;
+  }
+  #stepOfFabrication {
+    grid-column: 2;
+    grid-row: 1;
   }
   #imgProduction {
     grid-column: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    border-radius: 20px;
-    max-width: 850px;
-    height: auto;
   }
-
   #sortOfBeer {
-    grid-column-start: 3;
+    grid-column: 3;
     grid-row: 1;
   }
-
   #imgSortOfBeer {
     grid-column: 3;
     grid-row-start: 2;
-    grid-row-end: 4;
-    border-radius: 20px;
-    max-width: 800px;
-    height: auto;
+    grid-row-end: 3;
+  }
+  #thirdParagraph {
+    grid-column: 3;
+    grid-row: 3;
   }
 }
