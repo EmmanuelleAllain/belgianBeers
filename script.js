@@ -224,7 +224,6 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].beersdescription,
     belgianBeersTop10[i].beerspicture
   );
-<<<<<<< HEAD
 }
 
 /*cardHeader.onclick = function(){
@@ -237,8 +236,3 @@ const descriptionAppears = document.querySelector(".card-description");
 opacity.addEventListener("click", function () {
   descriptionAppears.display = "initial";
 });
-=======
-
-
-}
->>>>>>> 545173cb360fd3ef0641057491830f315e23b640
