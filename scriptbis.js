@@ -5,7 +5,7 @@ const listSecondPage = document.querySelector(".secondList");
 const listeThirdPage = document.querySelector(".ThirdList");
 
 listFirstPage.addEventListener("mouseover", () => {
-  listFirstPage.style.background = "grey";
+  listFirstPage.style.background = "black";
 });
 
 listSecondPage.addEventListener("mouseover", () => {
@@ -185,21 +185,16 @@ function createCard(title, bitterness, proof, type, description, picture) {
   card.addEventListener ('click', function () {
     if (window.matchMedia("(max-width: 800px)").matches) {
 
-      if(cardImg.innerHTML == `${description}`) {
-      cardImg.innerHTML = ``;
-      cardImg.style.backgroundColor = "white";
+      if(cardDescription.style.display == "inline-block") {
+      cardDescription.style.display = "none";
       //cardImg.style.backgroundImage.opacity= "0.5";
       //cardImg.style.backgroundImage= "`${picture}`";
 
           } else {
-          cardImg.innerHTML = `${description}`;
-          cardImg.style.backgroundColor = "rgba(0,0,0, 0.5)";
-          cardImg.style.color = "rgb(207, 184, 69)";
-          cardImg.style.fontStyle= "italic";
-          cardImg.style.textAlign= "center";
-          //cardImg.style.backgroundImage= "none";
-          cardImg.style.fontSize= "2.5vh";
-
+          cardDescription.style.display = "inline-block";
+          cardDescription.style.backgroundColor= "rgb(241, 240, 240)";
+          cardDescription.style.fontSize= "2vh";
+          cardDescription.style.paddingTop= "-2vh"
           };
     };
     
@@ -226,3 +221,5 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].beerspicture
   );
 
+
+}
