@@ -7,7 +7,9 @@
     <link href="styledav.css" rel="stylesheet" type="text/css" />
     <link href="page4.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
+
     <header>
       <div id="header">
         <li>
@@ -40,8 +42,8 @@
         </ul>
       </nav>
     </header>
-    <!--Elements pour bière qui suit la souris (à déplacer par la suite)-->
-    <div class="cursor-beer"></div>
+
+    <main class="main-form">
 
     <h2 class="events">Inscrivez-vous à nos prochains évènements</h2>
     <form action="" class="eventForm">
@@ -74,7 +76,7 @@
         <option value="7">7 personnes</option>
         <option value="8">8 personnes</option>
         <option value="9">9 personnes</option>
-        <option value="10">toute la promo</option>
+        <option value="toute la promo">toute la promo</option>
       </select>
       <input
         type="submit"
@@ -84,7 +86,9 @@
       />
     </form>
     <!--Cette div vide sert à accueillir le texte de confirmation quand on clique sur le bouton submit-->
-    <div id="confirmation-container"></div>
+    <div id="conf-div"></div>
+
+  </main>
 
     <script src="script.js"></script>
     <script src="page4.js"></script>
