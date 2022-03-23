@@ -5,13 +5,15 @@
   --main-first-color: white;
   --main-second-color: #cfb845;
   --main-third-color: #141414;
+  --main-background-color: #f1f0f0;
   font-family: Verdana, Tahoma, sans-serif;
 }
 .bars-card{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin : 50px 30px 50px 30px ;
     padding-bottom: 20px;
-    background-color: rgb(248, 247, 237);
+    background-color: var(--main-background-color);
+    /* background-color: rgb(248, 247, 237); */
 }
 
 
