@@ -5,8 +5,15 @@
   --main-first-color: white;
   --main-second-color: #cfb845;
   --main-third-color: #141414;
+  --main-background-color: #f1f0f0;
   font-family: Verdana, Tahoma, sans-serif;
 }
+
+/* CURSOR BEER */
+body {
+  cursor: url('./Icons/beer.jpg'), pointer;
+}
+
 a {
   text-decoration: none;
   color: var(--main-first-color);
@@ -103,7 +110,7 @@ header div {
   text-align: center;
   background-image: url("./Icons/belgianFlag.jpg");
   background-size: 100%, auto;
-  background-repeat: no-repeat;o;
+  background-repeat: no-repeat;
   color: white;
 }
 #pageAccueil {

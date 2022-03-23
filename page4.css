@@ -1,12 +1,13 @@
 /* CURSEUR */
 body {
-  cursor: url("./Icons/beer.jpg"), pointer;
+  cursor: url('./Icons/beer.jpg'), pointer;
 }
 
 /* PAGE FORMULAIRE (EVENTS)*/
 form {
   display: flex;
   flex-direction: column;
+  background-color: var(--main-background-color);
   /*box-sizing: border-box;*/
 }
 
