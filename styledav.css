@@ -8,6 +8,12 @@
   --main-backgroung-color: #f1f0f0;
   font-family: Verdana, Tahoma, sans-serif;
 }
+
+/* CURSOR BEER */
+body {
+  cursor: url('./Icons/beer.jpg'), pointer;
+}
+
 a {
   text-decoration: none;
   color: var(--main-first-color);
