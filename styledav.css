@@ -11,7 +11,11 @@
 
 /* CURSOR BEER */
 body {
+<<<<<<< HEAD
   cursor: url("./Icons/beer.jpg"), pointer;
+=======
+  cursor: url('./Icons/beer_icon.png'), pointer;
+>>>>>>> 545173cb360fd3ef0641057491830f315e23b640
 }
 
 a {

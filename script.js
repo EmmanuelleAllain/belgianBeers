@@ -181,14 +181,35 @@ function createCard(title, bitterness, proof, type, description, picture) {
   cardDescription.innerHTML = `<br>Description : ${description}`;
   cardBody.appendChild(cardDescription);
 
-  // Step3: Create the cardButton button, add the class card-button,
-  // set the text inside the tag to be "Adopt Now"
-  // and add it to the cardBody
 
-  //const cardBtn = document.createElement("button");
-  //cardBtn.classList.add("card-button");
-  //cardBtn.innerHTML = `Adopt Now`;
-  //cardBody.appendChild(cardBtn);
+  card.addEventListener ('click', function () {
+    if (window.matchMedia("(max-width: 800px)").matches) {
+
+      if(cardImg.innerHTML == `${description}`) {
+      cardImg.innerHTML = ``;
+      cardImg.style.backgroundColor = "white";
+      //cardImg.style.backgroundImage.opacity= "0.5";
+      //cardImg.style.backgroundImage= "`${picture}`";
+
+          } else {
+          cardImg.innerHTML = `${description}`;
+          cardImg.style.backgroundColor = "rgba(0,0,0, 0.5)";
+          cardImg.style.color = "white";
+          cardImg.style.fontStyle= "italic";
+          cardImg.style.textAlign= "center";
+          //cardImg.style.backgroundImage= "none";
+          cardImg.style.fontSize= "3vh";
+          };
+    };
+    
+  }, false);
+
+
+
+
+
+
+
 }
 
 /* Step 4: Create a for loop, for each element of the array, 
@@ -203,6 +224,7 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].beersdescription,
     belgianBeersTop10[i].beerspicture
   );
+<<<<<<< HEAD
 }
 
 /*cardHeader.onclick = function(){
@@ -215,3 +237,8 @@ const descriptionAppears = document.querySelector(".card-description");
 opacity.addEventListener("click", function () {
   descriptionAppears.display = "initial";
 });
+=======
+
+
+}
+>>>>>>> 545173cb360fd3ef0641057491830f315e23b640
