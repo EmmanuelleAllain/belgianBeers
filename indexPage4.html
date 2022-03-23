@@ -10,9 +10,9 @@
   <header>
     <div>
       <li>
-          <a href="PageAccueil.html"
-            ><img class="flag" src="./Icons/belgian_flag.jpg" alt=""
-          /></a>
+        <a id="beer" href="PageAccueil.html"
+          ><img class="flag" src="./Icons/belgian_flag.jpg" alt="" />Retour</a
+        >
       </li>
       <h1 id="welcome">Bienvenue, une fois !</h1>
       <button class="menuButton">
@@ -20,17 +20,22 @@
       </button>
     </div>
     <nav>
-      <ul>
-        <li><a href="PageTop10.html">Top 10 des bières belges</a></li>
-        <li><a href="page3lieux.html">Où déguster sa bière belge</a></li>
-        <li><a href="indexPage4.html">Ma prochaine sortie</a></li>
+      <ul id="ulHeader">
+        <li class="firstList">
+          <a href="PageTop10.html">Top 10 des bières belges</a>
+        </li>
+        <li class="secondList">
+          <a href="page3lieux.html">Où déguster sa bière belge</a>
+        </li>
+        <li class="ThirdList">
+          <a href="indexPage4.html">Ma prochaine sortie</a>
+        </li>
       </ul>
     </nav>
   </header>
   <body>
-
-  <!--Elements pour bière qui suit la souris (à déplacer par la suite)-->
-  <div class="cursor-beer"></div>
+    <!--Elements pour bière qui suit la souris (à déplacer par la suite)-->
+    <div class="cursor-beer"></div>
 
     <h2 class="events">Inscrivez-vous à nos prochains évènements</h2>
     <form action="" class="eventForm">
@@ -49,37 +54,38 @@
         <option value="Beer tasting sur la terrasse des Java">Beer tasting sur la terrasse des Java</option>
       </select>
 
-        <label for="number-select">Combien de personnes souhaitent participer ?</label>
-        <select name="number" id="number-select">
-            <option value="">--Nombre de personnes--</option>
-            <option value="1">1 personne</option>
-            <option value="2">2 personnes</option>
-            <option value="3">3 personnes</option>
-            <option value="4">4 personnes</option>
-            <option value="5">5 personnes</option>
-            <option value="6">6 personnes</option>
-            <option value="7">7 personnes</option>
-            <option value="8">8 personnes</option>
-            <option value="9">9 personnes</option>
-            <option value="10">toute la promo</option>
-        </select>
-        <input type="submit"
+      <label for="number-select"
+        >Combien de personnes souhaitent participer ?</label
+      >
+      <select name="number" id="number-select">
+        <option value="">--Nombre de personnes--</option>
+        <option value="1">1 personne</option>
+        <option value="2">2 personnes</option>
+        <option value="3">3 personnes</option>
+        <option value="4">4 personnes</option>
+        <option value="5">5 personnes</option>
+        <option value="6">6 personnes</option>
+        <option value="7">7 personnes</option>
+        <option value="8">8 personnes</option>
+        <option value="9">9 personnes</option>
+        <option value="10">toute la promo</option>
+      </select>
+      <input
+        type="submit"
         value="Valider l'inscription"
         name="eventSubmit"
         id="eventSubmit"
-        />
+      />
     </form>
     <!--Cette div vide sert à accueillir le texte de confirmation quand on clique sur le bouton submit-->
-    <div id="confirmation-container">
-    </div>
+    <div id="confirmation-container"></div>
 
     <!--<script src="mousemove.js"></script>-->
     <script src="script.js"></script>
     <script src="page4.js"></script>
-    
   </body>
   <footer>
-    <p id="thirdParagraph">
+    <p id="fourthParagraph">
       Aucune bière n'a été blessée pendant la conception de ce site<br />
       Copyright : Images libres de droits<br />
       L'abus d'alcool est dangereux pour la santé

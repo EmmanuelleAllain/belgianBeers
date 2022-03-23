@@ -7,6 +7,11 @@ html {
   list-style: none;
 }
 
+footer{
+  position: static;
+  bottom: 0;
+}
+
 .cards {
   height: clamp(100px, 50%, 200px);
   margin-top: 10px;
@@ -19,8 +24,6 @@ html {
   border-radius: 10px;
   width: 40%;
   margin: 3vw;
-  display: flex;
-  flex-direction: column;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -34,7 +37,6 @@ html {
   background-color: white;
   height: 100px;
   width: 100%;
-  margin-top: 1vw;
 }
 .card-body {
   padding: 2vw 2vW;
@@ -46,22 +48,21 @@ html {
 }
 
 h2{
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 2vh;
 }
   
 .card-description{
-font-size: 2vw;
-background-color: black;
-color: var(--main-second-color);
+font-style: italic;
 display: none;
 }
 
 .card-bitterness, .card-proof, .card-type{
-  font-size: 3vw;
+  font-size: 2vh;
 }
 
 .card-title{
-  font-size: 4vw;
+  /*font-size: 4vw;*/
   margin: 0px;
 }
 
@@ -74,4 +75,25 @@ footer>p{
   display: initial;
 }
 
+.card-body {
+  padding: 1vw 1vW;
+  margin-bottom: 2vw;
+  background-color: var(--main-first-color);
+  height: auto;
 }
+
+.card{
+  width: 15%;
+}
+
+.card-header, .card-img {
+  height: 200px;
+}
+
+.card-img{
+  background-size: cover;
+  margin-bottom: 1vw;
+}
+
+}
+
