@@ -47,7 +47,7 @@ a {
   flex-direction: column;
   font-weight: bolder;
   color: var(--main-third-color);
-  background-color: var(--main-backgroung-color);
+  background-color: var(--main-background-color);
 }
 .ulHeader {
   display: none;
@@ -78,7 +78,7 @@ h1 {
 #thirdParagraph {
   text-align: center;
   padding: 20px;
-  background-color: var(--main-backgroung-color);
+  background-color: var(--main-background-color);
   border-radius: 15px;
   margin-bottom: 15px;
 }
@@ -170,7 +170,7 @@ footer p {
   }
   .ulHeader {
     display: flex;
-    color: var(--main-backgroung-color);
+    color: var(--main-background-color);
   }
   .liste {
     width: 100%;
