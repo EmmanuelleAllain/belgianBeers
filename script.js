@@ -1,5 +1,5 @@
 const menuButton = document.querySelector(".menuButton");
-const menuList = document.querySelector("ul");
+const menuList = document.querySelector(".ulHeader");
 const listFirstPage = document.querySelector(".firstList");
 const listSecondPage = document.querySelector(".secondList");
 const listeThirdPage = document.querySelector(".ThirdList");
@@ -163,12 +163,12 @@ function createCard(title, bitterness, proof, type, description, picture) {
 
   const cardBitterness = document.createElement("div");
   cardBitterness.classList.add("card-bitterness");
-  cardBitterness.innerHTML = `Bitterness : ${bitterness}`;
+  cardBitterness.innerHTML = `Amertume : ${bitterness}`;
   cardBody.appendChild(cardBitterness);
 
   const cardProof = document.createElement("div");
   cardProof.classList.add("card-proof");
-  cardProof.innerHTML = `Proof : ${proof}`;
+  cardProof.innerHTML = `Alcool : ${proof}`;
   cardBody.appendChild(cardProof);
 
   const cardType = document.createElement("div");
@@ -178,7 +178,7 @@ function createCard(title, bitterness, proof, type, description, picture) {
 
   const cardDescription = document.createElement("div");
   cardDescription.classList.add("card-description");
-  cardDescription.innerHTML = `Description : ${description}`;
+  cardDescription.innerHTML = `<br>Description : ${description}`;
   cardBody.appendChild(cardDescription);
 
   // Step3: Create the cardButton button, add the class card-button,
@@ -203,4 +203,16 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].beersdescription,
     belgianBeersTop10[i].beerspicture
   );
+
+
 }
+
+/*cardHeader.onclick = function(){
+  imgOpacity.style.backgroundColor = rgba(255,255,255,0.5);
+};*/
+
+const opacity = document.querySelector(".card-img");
+const descriptionAppears = document.querySelector(".card-description");
+
+opacity.addEventListener('click', function() {
+  descriptionAppears.display = "initial";})
