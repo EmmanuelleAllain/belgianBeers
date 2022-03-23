@@ -8,14 +8,13 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="page3lieux.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
     <header>
-      <div>
+      <div id="header">
         <li>
           <a id="beer" href="PageAccueil.html"
-            ><img class="flag" src="./Icons/belgian_flag.jpg" alt="" />Retour</a
-          >
+            ><img class="flag" src="./Icons/belgian_flag.jpg" alt=""
+          /></a>
         </li>
         <h1 id="welcome">Bienvenue, une fois !</h1>
         <button class="menuButton">
@@ -23,16 +22,22 @@
         </button>
       </div>
       <nav>
-        <ul id="ulHeader">
-          <li class="firstList">
-            <a href="PageTop10.html">Top 10 des bières belges</a>
-          </li>
-          <li class="secondList">
-            <a href="page3lieux.html">Où déguster sa bière belge</a>
-          </li>
-          <li class="ThirdList">
-            <a href="indexPage4.html">Ma prochaine sortie</a>
-          </li>
+        <ul class="ulHeader">
+          <div id="blackFlag" class="liste">
+            <li class="firstList">
+              <a href="PageTop10.html">Top 10 des bières belges</a>
+            </li>
+          </div>
+          <div id="yellowFlag" class="liste">
+            <li class="secondList">
+              <a href="page3lieux.html">Où déguster sa bière belge</a>
+            </li>
+          </div>
+          <div id="redFlag" class="liste">
+            <li class="ThirdList">
+              <a href="indexPage4.html">Ma prochaine sortie</a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>

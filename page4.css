@@ -1,26 +1,20 @@
-/* CURSEUR */
-body {
-  cursor: url("./Icons/beer.jpg"), pointer;
+/* PAGE FORMULAIRE (EVENTS)*/
+
+.main-form {
+  background-color: var(--main-background-color);
+  min-height: 400px;
 }
 
-/* PAGE FORMULAIRE (EVENTS)*/
+h2.events {
+  text-align: center;
+  padding: 20px 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  /*box-sizing: border-box;*/
 }
 
-  /*cette id met en forme le container du paragraphe de confirmation dès qu'on clique sur le bouton submit*/
-  #confirmation-container {
-      margin: 20px;
-      background-color: var(--main-second-color);
-  }
-
-  /* cette class met en forme le paragraphe en lui-même*/
-  .conf-text {
-    text-align: center;
-
-  }
 input {
   background-color: white;
   border: none;
@@ -51,7 +45,8 @@ select {
   padding: 10px;
   width: 200px;
   height: auto;
-  background-color: var(--main-first-color);
+  color: white;
+  background-color: var(--main-third-color);
 }
 
 #eventSubmit:hover {
@@ -59,25 +54,28 @@ select {
   color: white;
 }
 
-h2.events {
-  text-align: center;
-}
-
-/*cette id met en forme le paragraphe de confirmation dès qu'on clique sur le bouton submit*/
-#confirmation-container {
-  margin: 20px;
+/*mise en forme du paragraphe de confirmation dès qu'on clique sur le bouton submit*/
+.confirmation-container {
+  margin: 30px;
+  padding: 10px 0;
+  background-color: var(--main-second-color);
   box-shadow: 2px 2px 5px var(--main-third-color);
 }
 
-/*mise en forme pour bière qui bouge avec la souris
-  .cursor-beer {
-    height: 40px;
-    width: 40px;
-    cursor: none;
-    background-image: url("./Icons/beer.jpg");
-    background-repeat: no-repeat;
-    position: absolute;
-  }*/
+/*mise en forme du paragraphe en lui-même*/
+.conf-text {
+  text-align: center;
+}
+
+/*mise en forme du bouton retour lorsqu'on a soumis le formulaire*/
+.button-refresh {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: var(--main-third-color);
+  border: none;
+  box-shadow: 2px 2px 5px var(--main-third-color);
+}
 
 @media screen and (min-width: 800px) {
   input,
