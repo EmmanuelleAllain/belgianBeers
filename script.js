@@ -1,5 +1,32 @@
 const menuButton = document.querySelector(".menuButton");
-const menuList = document.querySelector("ul");
+const menuList = document.querySelector(".ulHeader");
+const listFirstPage = document.querySelector(".firstList");
+const listSecondPage = document.querySelector(".secondList");
+const listeThirdPage = document.querySelector(".ThirdList");
+
+listFirstPage.addEventListener("mouseover", () => {
+  listFirstPage.style.background = "black";
+});
+
+listSecondPage.addEventListener("mouseover", () => {
+  listSecondPage.style.background = "black";
+});
+
+listeThirdPage.addEventListener("mouseover", () => {
+  listeThirdPage.style.background = "black";
+});
+
+listFirstPage.addEventListener("mouseout", () => {
+  listFirstPage.style.background = "";
+});
+
+listSecondPage.addEventListener("mouseout", () => {
+  listSecondPage.style.background = "";
+});
+
+listeThirdPage.addEventListener("mouseout", () => {
+  listeThirdPage.style.background = "";
+});
 
 menuButton.addEventListener("click", () => {
   menuList.classList.toggle("menuBurger");

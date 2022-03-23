@@ -6,39 +6,38 @@
     <title>Les Bières Belges</title>
     <link href="styledav.css" rel="stylesheet" type="text/css" />
   </head>
-  <header>
-    <div>
-      <li>
-          <a href="PageAccueil.html"
-            ><img class="flag" src="./Icons/belgian_flag.jpg" alt=""
-          /></a>
-      </li>
-      <h1 id="welcome">Bienvenue, une fois !</h1>
-      <button class="menuButton">
-        <img class="menuIcon" src="./Icons/menu_icon.png" alt="" />
-      </button>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="PageTop10.html">Top 10 des bières belges</a></li>
-        <li><a href="page3lieux.html">Où déguster sa bière belge</a></li>
-        <li><a href="indexPage4.html">Ma prochaine sortie</a></li>
-      </ul>
-    </nav>
-  </header>
   <body>
+    <header>
+      <div id="header">
+        <li>
+            <a id="beer" href="PageAccueil.html"><img class="flag" src="./Icons/belgian_flag.jpg" alt=""
+            /></a>
+        </li>
+        <h1 id="welcome">Bienvenue, une fois !</h1>
+        <button class="menuButton">
+          <img class="menuIcon" src="./Icons/menu_icon.png" alt="" />
+        </button>
+      </div>
+      <nav>
+        <ul class="ulHeader">
+        <div id="blackFlag" class="liste">
+          <li class="firstList"><a href="PageTop10.html">Top 10 des bières belges</a></li>
+        </div>
+        <div id="yellowFlag" class="liste">
+          <li class="secondList"><a href="page3lieux.html">Où déguster sa bière belge</a></li>
+        </div>
+        <div id="redFlag" class="liste">
+          <li class="ThirdList"><a href="indexPage4.html">Ma prochaine sortie</a></li>
+        </div>
+        </ul>
+      </nav>
+    </header>
     <section id="pageAccueil">
-      <h2 id="doYouKnow">Le saviez-vous ?</h2>
-      <br />
+      <h2 id="youKnow">Le saviez-vous ?</h2>
       <p id="firstParagraph">
-        C'est une boisson obtenue par <span> fermentation alcoolique </span> d'un moût de produits à l'issue du brassage.<br></br>
+        C'est une boisson obtenue par <span> fermentation alcoolique </span> d'un moût de produits à l'issue du brassage.<br />
         C'est la <span> plus ancienne </span> boisson alcoolisée connue au monde et <span> la plus consommée </span> après l'eau et le thé.     
-      </p>
-      <br />
-      <h2 id="stepOfFabrication">Comment se fabrique-t-elle ?</h2>
-      <br />
-      <img id="imgProduction" src="./Icons/etapes_fabrication_biere_maison.png" />
-      <p id="secondParagraph">
+      <br></br>
         La consommation de bière est à l'origine de nombreux évènements festifs : Fête de la bière, Mondial de la bière, Journée
         internationale de la bière.
         <br></br>
@@ -46,17 +45,29 @@
         présentes sur le marché. Contrairement aux autres boissons « sans alcool
         », elles sont élaborées par les mêmes procédés que la bière classique.
       </p>
-      <h2 id="sortOfBeer">En Belgique: trois Fermentation. Haute, basse et
+      <h2 id="stepOfFabrication">Comment se fabrique-t-elle ?</h2>
+      <img id="imgProduction" src="./Icons/etapes_fabrication_biere_maison.png" />
+     <h2 id="sortOfBeer">En Belgique: trois Fermentations. Haute, basse et
         spontanée.</h2>
       <img id="imgSortOfBeer" src="./Icons/Types-de-fermenations-1.jpg" />
+      <p id="thirdParagraph">
+        La fermentation basse : <br />
+        Elle nécessite l'adjonction dans le moût de levures dont l'activité est optimale à des températures basses (9-22 °C, idéalement 10-15 °C).
+        <br></br>
+        La fermentation haute : <br />
+        Levures dont l'activité est optimale à des températures hautes (15-24 °C, idéalement 18-21 °C).
+        <br></br>
+        La fermentation spontanée : <br />
+        Contrairement aux fermentations haute et basse, la fermentation spontanée ne nécessite pas d'ajout de levure dans le moût ; exposé à l'air libre, il est ensemencé par des levures sauvages.
+       </p>
     </section>
     <script src="script.js"></script>
+    <footer>
+      <p id="fourthParagraph">
+        Aucune bière n'a été blessée pendant la conception de ce site<br />
+        Copyright : Images libres de droits<br />
+        L'abus d'alcool est dangereux pour la santé
+      </p>
+    </footer>
   </body>
-  <footer>
-    <p id="thirdParagraph">
-      Aucune bière n'a été blessée pendant la conception de ce site<br />
-      Copyright : Images libres de droits<br />
-      L'abus d'alcool est dangereux pour la santé
-    </p>
-  </footer>
 </html>
