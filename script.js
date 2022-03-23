@@ -1,5 +1,5 @@
 const menuButton = document.querySelector(".menuButton");
-const menuList = document.querySelector("ul");
+const menuList = document.querySelector(".ulHeader");
 const listFirstPage = document.querySelector(".firstList");
 const listSecondPage = document.querySelector(".secondList");
 const listeThirdPage = document.querySelector(".ThirdList");

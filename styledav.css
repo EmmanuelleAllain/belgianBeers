@@ -5,23 +5,45 @@
   --main-first-color: white;
   --main-second-color: #cfb845;
   --main-third-color: #141414;
+  --main-backgroung-color: #f1f0f0;
   font-family: Verdana, Tahoma, sans-serif;
 }
 a {
   text-decoration: none;
   color: var(--main-first-color);
 }
+#firstList,
+#secondList,
+#thirdList {
+  background-color: var(--main-third-color);
+}
 #header {
-  border-bottom: #141414 2px solid;
+  border-bottom: var(--main-third-color) 2px solid;
+}
+#blackFlag {
+  background-image: url("./Icons/blackFlag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#yellowFlag {
+  background-image: url("./Icons/yellowFlag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#redFlag {
+  background-image: url("./Icons/redFlag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #beer {
   display: flex;
   text-align: center;
   flex-direction: column;
   font-weight: bolder;
-  color: #141414;
+  color: var(--main-third-color);
+  background-color: var(--main-backgroung-color);
 }
-ul {
+.ulHeader {
   display: none;
 }
 h1 {
@@ -48,11 +70,12 @@ h1 {
 #stepOfFabrication,
 #sortOfBeer,
 #firstParagraph,
-#secondParagraph,
 #thirdParagraph,
 #fourthParagraph {
   text-align: center;
-  margin: 10px;
+  padding: 20px;
+  background-color: var(--main-backgroung-color);
+  border-radius: 15px;
 }
 p span {
   font-weight: bold;
@@ -101,10 +124,9 @@ header div {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-image: url("./Icons/belgianFlag.jpg");
   background-size: 100%, auto;
-  background-repeat: no-repeat;o;
-  color: white;
+  background-repeat: no-repeat;
+  color: var(--main-first-color);
 }
 #pageAccueil {
   display: flex;
@@ -117,6 +139,7 @@ header div {
 footer {
   position: relative;
   border-radius: 15px;
+  border-top: var(--main-third-color) 2px solid;
   background-color: var(--main-first-color);
 }
 footer p {
@@ -124,23 +147,20 @@ footer p {
   font-weight: bold;
 }
 #fourthParagraph {
-  border-top: #141414 2px solid;
   padding-top: 15px;
-  }
+}
 @media screen and (min-width: 793px) {
   #firstParagraph,
   #secondParagraph,
   #thirdParagraph {
     text-align: justify;
   }
-  #ulHeader {
+  .ulHeader {
     display: flex;
-    justify-content: space-evenly;
-    background-image: url("./Icons/belgianFlag.jpg");
-    background-size: 100%, auto;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    color: white;
+    color: var(--main-backgroung-color);
+  }
+  .liste {
+    width: 100%;
   }
   .menuButton {
     visibility: hidden;
@@ -153,7 +173,7 @@ footer p {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 40px;
   }
   #doYouKnow {
     grid-column: 1;
