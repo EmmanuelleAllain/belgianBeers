@@ -5,7 +5,7 @@ const listSecondPage = document.querySelector(".secondList");
 const listeThirdPage = document.querySelector(".ThirdList");
 
 listFirstPage.addEventListener("mouseover", () => {
-  listFirstPage.style.background = "black";
+  listFirstPage.style.background = "grey";
 });
 
 listSecondPage.addEventListener("mouseover", () => {
@@ -203,8 +203,6 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].beersdescription,
     belgianBeersTop10[i].beerspicture
   );
-
-
 }
 
 /*cardHeader.onclick = function(){
@@ -214,5 +212,6 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
 const opacity = document.querySelector(".card-img");
 const descriptionAppears = document.querySelector(".card-description");
 
-opacity.addEventListener('click', function() {
-  descriptionAppears.display = "initial";})
+opacity.addEventListener("click", function () {
+  descriptionAppears.display = "initial";
+});
