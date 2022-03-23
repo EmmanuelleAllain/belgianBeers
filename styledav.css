@@ -11,7 +11,7 @@
 
 /* CURSOR BEER */
 body {
-  cursor: url('./Icons/beer.jpg'), pointer;
+  cursor: url('./Icons/beer_icon.png'), pointer;
 }
 
 a {
