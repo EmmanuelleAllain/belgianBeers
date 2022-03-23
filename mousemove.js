@@ -1,25 +1,7 @@
-// ELEMENTS POUR LA BIERE QUI SUIT LA SOURIS
+// ELEMENTS POUR LA BIERE QUI SUIT LA SOURIS (cette page n'est plus utile)
 
-let beerIcon = document.querySelector(".beerIcon");
+let cursor = document.querySelector('.cursor-beer');
 
-/*document.addEventListener = ('mousemove', function(event){
-  $("#beer-icon-mousemove").animate({event.clientX, event.clientY});
-})*/
-
-
-window.addEventListener("mousemove", (event) => {
-  const imgBeer = document.createElement("img");
-  imgBeer.src = "./Icons/beer.png";
-  /*$(".imgBeer").animate({event.clientX, event.clientY});
-  console.log(`Position de la souris : X = ${event.clientX} | Y = ${event.clientY}`);*/
-  imgBeer.style.left = event.clientX;
-  imgBeer.style.top = event.clientY;
-  /*mousemove.style.left = e.pageX + "px";
-  mousemove.style.top = e.pageY + "px";*/
+document.addEventListener('mousemove', function(event){
+  cursor.setAttribute('style', 'top:'+(event.pageY - 25)+'px; left:'+(event.pageX - 25)+'px;');
 });
-/*window.addEventListener("mousedown", () => {
-  mousemove.style.transform = "scale(2) translate(-25%, -25%)";
-});
-window.addEventListener("mouseup", () => {
-  mousemove.style.transform = "scale(1) translate(-50%, -50%)";
-});*/
