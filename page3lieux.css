@@ -20,6 +20,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 2%;
+
 }
 .bar-footer{
     display: flex;
@@ -41,6 +42,7 @@
     padding: 1px;
     list-style-image: url('./Icons/beer.jpg');
 }
+
 .link-btn{
     margin-top: 5px;
     margin-right: 10vw;
@@ -98,3 +100,4 @@
         border: 0;
     }
 }
+
