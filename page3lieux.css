@@ -5,14 +5,25 @@
   --main-first-color: white;
   --main-second-color: #cfb845;
   --main-third-color: #141414;
+  --main-background-color: #f1f0f0;
   font-family: Verdana, Tahoma, sans-serif;
 }
+.bars-card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin : 50px 30px 50px 30px ;
+    padding-bottom: 20px;
+    background-color: var(--main-background-color);
+    /* background-color: rgb(248, 247, 237); */
+}
+
 
 .bars-name {
   padding: 25px 0 10px 0;
-  margin-left: 10vw;
+  margin-left: 6px;
   font-size: 6vw;
-  color: var(--main-first-color);
+  color: var(--main-third-color);
+  font-weight: 500;
+  text-shadow: 2px 4px rgba(149, 157, 165, 0.2);
 }
 
 .bars-img {
@@ -26,6 +37,7 @@
 .bar-footer {
   display: flex;
   flex-direction: row-reverse;
+
 }
 .link-btn > a > img {
   width: 10vw;
@@ -33,25 +45,41 @@
 
 .descr-list {
   display: initial;
+  margin-top: 20px;
+
+  padding-left: 0;
 }
 
 .bar-descr1,
 .bar-descr2 {
-  font-size: 3.5vw;
+  justify-content: space-between;
+  font-size: 3.2vw;
   border: none;
   font-weight: initial;
   margin: 0 18vw 0 18vw;
   padding: 1px;
+  margin-left: 36px;
+  margin-right: 0;
   list-style-image: url("./Icons/beer.jpg");
+  
 }
 
 .link-btn {
   margin-top: 5px;
-  margin-right: 10vw;
-  width: 10vw;
-  background-color: transparent;
-  border: none;
+  margin-right: 13px;
   margin-left: auto;
+  margin-top: 20px;
+  width: max-content;
+  height: max-content;
+  background-color:transparent;
+  border: none;
+  border-radius: 11%;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: x-small;
+  font-weight: bold;
+  color: darkred;
+  align-items: center;
 }
 
 .map {
@@ -61,44 +89,47 @@
 @media screen and (min-width: 793px) {
   .bars-name {
     font-size: 35px;
+    margin-left: 70px ;
   }
 
   .bars-img {
     width: 35vw;
     height: 300px;
-    margin-left: 10vw;
+    margin: 0;
   }
   .bar-body {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     margin-bottom: 20px;
+    justify-content: space-evenly;
   }
+  
   .bar-footer {
     display: flex;
     flex-direction: column;
-    margin-right: 10vw;
+    align-items: space-between;
   }
 
   .link-btn {
     display: none;
-    /* grid-row: 3/4;
-        width: 100%; */
   }
 
   .descr-list {
     flex-grow: 1;
+    margin-top: 0;
   }
   .bar-descr1,
   .bar-descr2 {
     font-size: 1.5vw;
-    margin: 0 5vw 0 5vw;
+    margin-left : 25px;
   }
 
   .map {
     display: initial;
-    width: 550px;
-    flex-grow: 2;
+    width: 100%;
+    margin: auto;
     border: 0;
+    height: 200px;
+    width: 550px;
   }
 }

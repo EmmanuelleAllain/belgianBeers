@@ -5,7 +5,7 @@ const listSecondPage = document.querySelector(".secondList");
 const listeThirdPage = document.querySelector(".ThirdList");
 
 listFirstPage.addEventListener("mouseover", () => {
-  listFirstPage.style.background = "black";
+  listFirstPage.style.background = "grey";
 });
 
 listSecondPage.addEventListener("mouseover", () => {
@@ -199,6 +199,7 @@ function createCard(title, bitterness, proof, type, description, picture) {
           cardImg.style.textAlign= "center";
           //cardImg.style.backgroundImage= "none";
           cardImg.style.fontSize= "2.5vh";
+
           };
     };
     
@@ -225,5 +226,3 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].beerspicture
   );
 
-
-}
