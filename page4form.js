@@ -20,6 +20,6 @@ form.addEventListener ("submit", function(event) {
   confirmationText.classList.add("conf-text");
   confirmationText.innerHTML = `<strong>Merci ${firstName.value}</strong> !<br>Voici le détail de votre réservation :<br> Nom : ${name.value} <br>Pénom : ${firstName.value}<br>Evénement choisi : ${eventSelect.value}<br>Nombre de personnes : ${numberSelect.value}`;
   confirmationDiv.appendChild(buttonRefresh);
-  buttonRefresh.innerHTML = `<a href="indexPage4.html">Retour</a>`;
+  buttonRefresh.innerHTML = `<a href="page4form.html">Retour</a>`;
   buttonRefresh.classList.add("button-refresh");
 });
