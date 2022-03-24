@@ -31,7 +31,7 @@ listeThirdPage.addEventListener("mouseout", () => {
 menuButton.addEventListener("click", () => {
   menuList.classList.toggle("menuBurger");
 });
-
+/*
 const cards = document.querySelector(".cards");
 
 const belgianBeersTop10 = [
@@ -205,8 +205,8 @@ function createCard(title, bitterness, proof, type, description, picture) {
   );
 }
 
-/* Step 4: Create a for loop, for each element of the array, 
-   call the function createCard with the corresponding parameter */
+Step 4: Create a for loop, for each element of the array, 
+   call the function createCard with the corresponding parameter
 
 for (let i = 0; i < belgianBeersTop10.length; i++) {
   createCard(
@@ -216,5 +216,6 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].type,
     belgianBeersTop10[i].beersdescription,
     belgianBeersTop10[i].beerspicture
-  );
-}
+  )
+  };
+  */
