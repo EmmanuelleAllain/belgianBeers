@@ -5,13 +5,13 @@
   --main-first-color: white;
   --main-second-color: #cfb845;
   --main-third-color: #141414;
-  --main-backgroung-color: #f1f0f0;
+  --main-background-color: #f1f0f0;
   font-family: Verdana, Tahoma, sans-serif;
 }
 
 /* CURSOR BEER */
 body {
-  cursor: url('./Icons/beer.jpg'), pointer;
+  cursor: url("./Icons/beer_icon.png"), pointer;
 }
 
 a {
@@ -47,7 +47,7 @@ a {
   flex-direction: column;
   font-weight: bolder;
   color: var(--main-third-color);
-  background-color: var(--main-backgroung-color);
+  background-color: var(--main-background-color);
 }
 .ulHeader {
   display: none;
@@ -64,18 +64,22 @@ h1 {
 #welcome {
   margin: 10px;
   text-align: center;
-  vertical-align: middle;
   font-size: 30px;
 }
-#youKnow,
+#firstDiv,
 #stepOfFabrication,
 #sortOfBeer,
 #firstParagraph,
-#thirdParagraph,
+#thirdParagraph {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--main-background-color);
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
 #fourthParagraph {
   text-align: center;
   padding: 20px;
-  background-color: var(--main-backgroung-color);
   border-radius: 15px;
 }
 p span {
@@ -106,19 +110,22 @@ header div {
   justify-content: space-around;
   background-color: var(--main-first-color);
   padding: 15px;
-  border-radius: 15px;
 }
 #imgProduction {
   display: flex;
   border-radius: 20px;
   width: 100%;
   height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 #imgSortOfBeer {
   display: flex;
   border-radius: 20px;
   width: 100%;
   height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .menuBurger {
   display: flex;
@@ -158,7 +165,7 @@ footer p {
   }
   .ulHeader {
     display: flex;
-    color: var(--main-backgroung-color);
+    color: var(--main-background-color);
   }
   .liste {
     width: 100%;

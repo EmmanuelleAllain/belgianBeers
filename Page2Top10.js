@@ -1,3 +1,40 @@
+<<<<<<< HEAD:Page2Top10.js
+=======
+const menuButton = document.querySelector(".menuButton");
+const menuList = document.querySelector(".ulHeader");
+const listFirstPage = document.querySelector(".firstList");
+const listSecondPage = document.querySelector(".secondList");
+const listeThirdPage = document.querySelector(".ThirdList");
+
+listFirstPage.addEventListener("mouseover", () => {
+  listFirstPage.style.background = "grey";
+});
+
+listSecondPage.addEventListener("mouseover", () => {
+  listSecondPage.style.background = "black";
+});
+
+listeThirdPage.addEventListener("mouseover", () => {
+  listeThirdPage.style.background = "black";
+});
+
+listFirstPage.addEventListener("mouseout", () => {
+  listFirstPage.style.background = "";
+});
+
+listSecondPage.addEventListener("mouseout", () => {
+  listSecondPage.style.background = "";
+});
+
+listeThirdPage.addEventListener("mouseout", () => {
+  listeThirdPage.style.background = "";
+});
+
+menuButton.addEventListener("click", () => {
+  menuList.classList.toggle("menuBurger");
+});
+
+>>>>>>> 6b1b5d409da7cbcb871b0626d9a7567063b2bbc5:script.js
 const cards = document.querySelector(".cards");
 
 const belgianBeersTop10 = [
@@ -164,7 +201,36 @@ function createCard(title, bitterness, proof, type, description, picture) {
   
 
   card.addEventListener ('click', function () {
+<<<<<<< HEAD:Page2Top10.js
   if (window.matchMedia("(max-width: 800px)").matches) {
+=======
+    if (window.matchMedia("(max-width: 800px)").matches) {
+
+      if(cardImg.innerHTML == `${description}`) {
+      cardImg.innerHTML = ``;
+      cardImg.style.backgroundColor = "white";
+      //cardImg.style.backgroundImage.opacity= "0.5";
+      //cardImg.style.backgroundImage= "`${picture}`";
+
+          } else {
+          cardImg.innerHTML = `${description}`;
+          cardImg.style.backgroundColor = "rgba(0,0,0, 0.5)";
+          cardImg.style.color = "rgb(207, 184, 69)";
+          cardImg.style.fontStyle= "italic";
+          cardImg.style.textAlign= "center";
+          //cardImg.style.backgroundImage= "none";
+          cardImg.style.fontSize= "2.5vh";
+
+          };
+    };
+    
+  }, false);
+
+
+
+
+
+>>>>>>> 6b1b5d409da7cbcb871b0626d9a7567063b2bbc5:script.js
 
       if (cardDescription.style.display == "none") {
       cardDescription.style.display = "flex";
@@ -196,5 +262,3 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].beerspicture,
   );
 
-
-}
