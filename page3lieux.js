@@ -55,7 +55,7 @@ const barList = [
 
 function createBar(name, imgSrc, link, descr1, descr2 = null, mapFrame){
     
-    
+    //creation of a section for each bar
     const barCard = document.createElement("div");
     barCard.className = "bars-card"
     bars.appendChild(barCard);

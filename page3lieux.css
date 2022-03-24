@@ -13,7 +13,6 @@
     margin : 50px 30px 50px 30px ;
     padding-bottom: 20px;
     background-color: var(--main-background-color);
-    /* background-color: rgb(248, 247, 237); */
 }
 
 
@@ -46,7 +45,6 @@
 .descr-list {
   display: initial;
   margin-top: 20px;
-
   padding-left: 0;
 }
 
