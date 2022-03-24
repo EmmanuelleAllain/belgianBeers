@@ -31,15 +31,30 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.firstList {
+  border: #f1f0f0 2px solid;
+  border-radius: 25px;
+  padding: 20px;
+}
 #yellowFlag {
   background-image: url("./Icons/yellowFlag.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+.secondList {
+  border: #f1f0f0 2px solid;
+  border-radius: 25px;
+  padding: 20px;
+}
 #redFlag {
   background-image: url("./Icons/redFlag.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.thirdList {
+  border: #f1f0f0 2px solid;
+  border-radius: 25px;
+  padding: 20px;
 }
 #beer {
   display: flex;
@@ -85,6 +100,7 @@ h1 {
 p span {
   font-weight: bold;
 }
+/*
 nav li {
   border: 2px solid;
   border-radius: 15px;
@@ -95,6 +111,7 @@ nav li {
   padding: 5px;
   font-weight: bolder;
 }
+*/
 .menuButton {
   border: none;
   border-radius: 15px;
