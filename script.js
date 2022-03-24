@@ -181,36 +181,28 @@ function createCard(title, bitterness, proof, type, description, picture) {
   cardDescription.innerHTML = `<br>Description : ${description}`;
   cardBody.appendChild(cardDescription);
 
-
-  card.addEventListener ('click', function () {
-    if (window.matchMedia("(max-width: 800px)").matches) {
-
-      if(cardImg.innerHTML == `${description}`) {
-      cardImg.innerHTML = ``;
-      cardImg.style.backgroundColor = "white";
-      //cardImg.style.backgroundImage.opacity= "0.5";
-      //cardImg.style.backgroundImage= "`${picture}`";
-
-          } else {
+  card.addEventListener(
+    "click",
+    function () {
+      if (window.matchMedia("(max-width: 800px)").matches) {
+        if (cardImg.innerHTML == `${description}`) {
+          cardImg.innerHTML = ``;
+          cardImg.style.backgroundColor = "white";
+          //cardImg.style.backgroundImage.opacity= "0.5";
+          //cardImg.style.backgroundImage= "`${picture}`";
+        } else {
           cardImg.innerHTML = `${description}`;
           cardImg.style.backgroundColor = "rgba(0,0,0, 0.5)";
           cardImg.style.color = "rgb(207, 184, 69)";
-          cardImg.style.fontStyle= "italic";
-          cardImg.style.textAlign= "center";
+          cardImg.style.fontStyle = "italic";
+          cardImg.style.textAlign = "center";
           //cardImg.style.backgroundImage= "none";
-          cardImg.style.fontSize= "2.5vh";
-
-          };
-    };
-    
-  }, false);
-
-
-
-
-
-
-
+          cardImg.style.fontSize = "2.5vh";
+        }
+      }
+    },
+    false
+  );
 }
 
 /* Step 4: Create a for loop, for each element of the array, 
@@ -225,4 +217,4 @@ for (let i = 0; i < belgianBeersTop10.length; i++) {
     belgianBeersTop10[i].beersdescription,
     belgianBeersTop10[i].beerspicture
   );
-
+}
