@@ -2,7 +2,7 @@
 
 .main-form {
   background-color: var(--main-background-color);
-  min-height: 400px;
+  min-height: 650px;
 }
 
 h2.events {
@@ -58,7 +58,7 @@ select {
 .confirmation-container {
   margin: 30px;
   padding: 10px 0;
-  background-color: var(--main-second-color);
+  background-color: var(--main-background-color);
   box-shadow: 2px 2px 5px var(--main-third-color);
 }
 
@@ -84,7 +84,7 @@ select {
     width: min(60vw, 700px);
   }
 
-  #confirmation-container {
+  .confirmation-container {
     width: max(50vw);
     margin: 10px auto;
     
