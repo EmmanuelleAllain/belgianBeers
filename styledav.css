@@ -60,12 +60,7 @@ h1 {
   height: 80px;
   border-radius: 15px;
 }
-.imgPageTop10 {
-  display: flex;
-  width: auto;
-  height: auto;
-  border-radius: 15px;
-}
+
 #welcome {
   margin: 10px;
   text-align: center;
