@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Les bières belges</title>
-    <link href="styledav.css" rel="stylesheet" type="text/css" />
-    <link href="stylePageTop10.css" rel="stylesheet" type="text/css" />
+    <link href="page1accueil.css" rel="stylesheet" type="text/css" />
+    <link href="Page2Top10.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
       <div id="header">
         <li>
-          <a id="beer" href="PageAccueil.html"
+          <a id="beer" href="page1accueil.html"
             ><img class="flag" src="./Icons/belgian_flag.jpg" alt=""
           /></a>
         </li>
@@ -21,27 +21,26 @@
         </button>
       </div>
       <nav>
-        <ul class="ulHeader">
+        <div class="ulHeader">
           <div id="blackFlag" class="liste">
-            <li class="firstList">
-              <a href="PageTop10.html">Top 10 des bières belges</a>
-            </li>
+            <a class="firstList" href="Page2Top10.html"
+              >Top 10 des bières belges</a
+            >
           </div>
           <div id="yellowFlag" class="liste">
-            <li class="secondList">
-              <a href="page3lieux.html">Où déguster sa bière belge</a>
-            </li>
+            <a class="secondList" href="page3lieux.html"
+              >Où déguster sa bière belge</a
+            >
           </div>
           <div id="redFlag" class="liste">
-            <li class="ThirdList">
-              <a href="indexPage4.html">Ma prochaine sortie</a>
-            </li>
+            <a class="thirdList" href="page4form.html">Ma prochaine sortie</a>
           </div>
-        </ul>
+        </div>
       </nav>
     </header>
     <div class="cards"></div>
-    <script src="script.js"></script>
+    <script src="Page2Top10.js"></script>
+    <script src="page1accueil.js"></script>
     <footer>
       <p id="fourthParagraph">
         Aucune bière n'a été blessée pendant la conception de ce site<br />

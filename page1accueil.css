@@ -18,6 +18,9 @@ a {
   text-decoration: none;
   color: var(--main-first-color);
 }
+.liste {
+  padding: 10px;
+}
 #firstList,
 #secondList,
 #thirdList {
@@ -31,15 +34,33 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.firstList {
+  border: #f1f0f0 2px solid;
+  width: 300px;
+  border-radius: 25px;
+  padding: 10px;
+}
 #yellowFlag {
   background-image: url("./Icons/yellowFlag.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+.secondList {
+  border: #f1f0f0 2px solid;
+  width: 300px;
+  border-radius: 25px;
+  padding: 10px;
+}
 #redFlag {
   background-image: url("./Icons/redFlag.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.thirdList {
+  border: #f1f0f0 2px solid;
+  width: 300px;
+  border-radius: 25px;
+  padding: 10px;
 }
 #beer {
   display: flex;
@@ -58,12 +79,6 @@ h1 {
 .flag {
   width: 70px;
   height: 80px;
-  border-radius: 15px;
-}
-.imgPageTop10 {
-  display: flex;
-  width: auto;
-  height: auto;
   border-radius: 15px;
 }
 #welcome {
@@ -90,21 +105,12 @@ h1 {
 p span {
   font-weight: bold;
 }
-nav li {
-  border: 2px solid;
-  border-radius: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 50;
-  margin-right: 50;
-  padding: 5px;
-  font-weight: bolder;
-}
 .menuButton {
   border: none;
   border-radius: 15px;
   width: 70px;
   height: 80px;
+  margin: 10px;
 }
 .menuButton > img {
   width: 70px;
@@ -114,7 +120,6 @@ header div {
   display: flex;
   justify-content: space-around;
   background-color: var(--main-first-color);
-  padding: 15px;
 }
 #imgProduction {
   display: flex;
@@ -124,7 +129,7 @@ header div {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-#imgSortOfBeer {
+#imgFermentation {
   display: flex;
   border-radius: 20px;
   width: 100%;
@@ -170,10 +175,14 @@ footer p {
   }
   .ulHeader {
     display: flex;
+    text-align: center;
+
+    font-weight: bolder;
     color: var(--main-background-color);
   }
   .liste {
     width: 100%;
+    padding: 40px;
   }
   .menuButton {
     visibility: hidden;
@@ -213,7 +222,7 @@ footer p {
     grid-column: 3;
     grid-row: 1;
   }
-  #imgSortOfBeer {
+  #imgFermentation {
     grid-column: 3;
     grid-row-start: 2;
     grid-row-end: 3;
