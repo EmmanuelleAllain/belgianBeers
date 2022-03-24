@@ -22,7 +22,7 @@ footer{
 .card {
   background-color: var(--main-first-color);
   border-radius: 10px;
-  width: 40%;
+  width: 60%;
   margin: 3vw;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -62,12 +62,17 @@ display: none;
 }
 
 .card-title{
-  /*font-size: 4vw;*/
   margin: 0px;
 }
 
 footer>p{
   margin: 0;
+}
+
+.button{
+  display:inline-block; 
+  float: right;
+  margin-top: 1vh;
 }
 
 @media screen and (min-width: 800px) {
@@ -94,6 +99,3 @@ footer>p{
   background-size: cover;
   margin-bottom: 1vw;
 }
-
-}
-
