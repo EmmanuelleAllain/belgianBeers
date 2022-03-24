@@ -77,8 +77,8 @@ h1 {
   font-size: 25px;
 }
 .flag {
-  width: 70px;
-  height: 80px;
+  width: 120px;
+  height: auto;
   border-radius: 15px;
 }
 #welcome {
@@ -93,6 +93,7 @@ h1 {
 #thirdParagraph {
   text-align: center;
   padding: 20px;
+  width: 100%;
   background-color: var(--main-background-color);
   border-radius: 15px;
   margin-bottom: 15px;
@@ -173,10 +174,17 @@ footer p {
   #thirdParagraph {
     text-align: justify;
   }
+  #firstDiv,
+  #stepOfFabrication,
+  #sortOfBeer,
+  #firstParagraph,
+  #thirdParagraph {
+    background-color: var(--main-background-color);
+    border-radius: 15px;
+  }
   .ulHeader {
     display: flex;
     text-align: center;
-
     font-weight: bolder;
     color: var(--main-background-color);
   }
@@ -193,9 +201,9 @@ footer p {
   }
   #pageAccueil {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 40px;
+    gap: 60px;
   }
   #doYouKnow {
     grid-column: 1;
