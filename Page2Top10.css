@@ -70,7 +70,6 @@ footer>p{
 }
 
 .button{
-  display:inline-block; 
   float: right;
   margin-top: 1vh;
 }
@@ -98,4 +97,5 @@ footer>p{
 .card-img{
   background-size: cover;
   margin-bottom: 1vw;
+}
 }
